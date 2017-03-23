@@ -9,34 +9,16 @@ import 'fetch-ie8';
 import 'es5-shim';
 import 'es5-shim/es5-sham'
 import 'es6-shim';
-// import 'es6-shim/es6-sham'
-// import 'es6-promise'
+
 
 import React, { Component } from 'react'
 import { render } from 'react-dom'
 import thunk from 'redux-thunk'
 import rootReducer from './reducers'
-import thunkMiddleware from 'redux-thunk'
-import { Provider, connect } from 'react-redux'
+import { Provider } from 'react-redux'
 import { combineReducers, createStore, applyMiddleware, compose } from 'redux'
-import { Router, Route, IndexRoute, Link, IndexLink, browserHistory, hashHistory } from 'react-router'
+import { Router, hashHistory } from 'react-router'
 import App from './containers/App.jsx'
-import stores from './reducers/index'
-
-// let store = createStore(
-//     stores,
-//     applyMiddleware(thunkMiddleware)
-// )
-// console.log('module: ', module)
-// if (module.hot) {
-//     // Enable Webpack hot module replacement for reducers
-//     console.log('热更新')
-//     // module.hot.accept()
-//     module.hot.accept('./reducers', () => {
-//         const nextReducer = require('./reducers').default
-//         store.replaceReducer(nextReducer)
-//     })
-// }
 
 const store = compose(
   applyMiddleware(thunk),
@@ -90,7 +72,7 @@ const Details = {
     path: '/:name/:date/:title',
     getComponent(nextState, cb) {
         require.ensure([], (require) => {
-            return cb(null, require('./components/details'))
+            return cb(null, require('./containers/Details'))
         })
     }
 }

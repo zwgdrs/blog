@@ -3,7 +3,7 @@ import {render} from 'react-dom'
 import {connect} from 'react-redux'
 import {bindActionCreators} from 'redux'
 import * as actions from '../actions/index'
-
+import { markdown } from 'markdown'
 const MessageItem = ({data})=> {
   return <div className="messageItem">
     <div className="messageAuthor"><span className="author">{data.name}：说</span></div>
@@ -18,7 +18,7 @@ export class DetailsComponent extends Component {
     this.emailValue = window.localStorage['commentInfo'] ? JSON.parse(window.localStorage['commentInfo']).email : ''
   }
 
-  componentWillmount() {
+  componentDidMount() {
     this.props.actions.ajaxData("details", this.props.params)
   }
 
@@ -52,6 +52,7 @@ export class DetailsComponent extends Component {
     } else {
       messageItemTmp = "暂无留言"
     }
+
     return (
       <div className="articleDetails">
         <h1>{data.title}</h1>
@@ -59,7 +60,7 @@ export class DetailsComponent extends Component {
           发布时间：{data.time ? data.time.minute : ""}</div>
         <div className="main">
           <div className="coverImg" dangerouslySetInnerHTML={{__html:img}}></div>
-          <div className="" dangerouslySetInnerHTML={{__html:data.content}}>
+          <div className="content" dangerouslySetInnerHTML={{__html:data.content ? markdown.toHTML(data.content) : ''}}>
           </div>
         </div>
         <div className="messageBox">

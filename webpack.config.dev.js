@@ -2,6 +2,12 @@ var path = require('path');
 var webpack = require('webpack');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 
+function makeExtract() {
+	var loader = 'css?modules&importLoaders=1&localIdentName=[name]_[local]_[hash:base64:5]';
+	var param = [].slice.call(arguments).join('!');
+	return ExtractTextPlugin.extract('style', loader + (param[0] === '!' ? param : ('!' + param) ));
+	// return ['style',loader,...[].slice.call(arguments)].join('!');
+}
 
 module.exports = {
 	devtool: 'eval-source-map',

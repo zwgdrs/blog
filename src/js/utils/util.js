@@ -119,59 +119,10 @@ export function sessionStorageHeight(name) {
     sessionStorage.setItem(name, getScrollTop)
 }
 
-export const validator = {
-    types: {},
-    messages: [],
-    config: {},
-    validate: function(data) {
-        let i
-        let msg
-        let type
-        let checker
-        let result_ok
-        this.messages = []
-        for (i in data) {
-            if (data.hasOwnProperty(i)) {
-                type = this.config[i]
-                checker = this.types[type]
-                if (!type) {
-                    continue
-                }
-                if (!checker) {
-                    throw {
-                        name: 'ValidationError',
-                        message: 'No handler to validate type' + type
-                    }
-                }
-                result_ok = checker.validate(data[i])
-                if (!result_ok) {
-                    msg = `Invalidate value for *${i}*, ${checker.instructions}`
-                    this.messages.push(msg)
-                }
-            }
-        }
-        return this.hasErrors()
-    },
-
-    hasErrors: function () {
-        return this.messages.length !== 0
+export function editor() {
+    this.update = function () {
+        this.preview.innerHTML = markdown.toHTML(this.edit.value);
     }
+    this.edit.editor = this;
+    this.update();
 }
-
-export const localHost = (() => {
-    if (!window.location.origin) {
-        window.location.origin = window.location.protocol
-            + "//" + window.location.hostname
-            + (window.location.port ? ':' + window.location.port : '');
-    }
-    return window.location.origin
-})()
-
-export const localPath = (() => {
-    const reg = window.location.href.match(/\/nc\/qa/i)
-    let str = localHost
-    if(reg) {
-        str += reg[0]
-    }
-    return str
-})()

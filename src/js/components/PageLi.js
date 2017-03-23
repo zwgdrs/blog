@@ -1,16 +1,23 @@
 import React, {Component} from "react"
 import {render} from 'react-dom'
 import {Link, IndexLink} from 'react-router'
-import '../../css/pageLi.css'
-
+import {hashHistory} from 'react-router'
+import CSSModules from 'react-css-modules';
+import styles from '../../css/pageLi.less'
+@CSSModules(styles, {
+    allowMultiple: true
+})
 export default class PageLi extends Component {
     constructor(props) {
         super(props)
         this._alert = this.props.actions._alert
+        this.validatePage = this.validatePage.bind(this)
     }
 
-    swtichPage(i, type) {
-        //this.props.query.page=i;
+    swtichPage(i, type, len) {
+        if (!this.validatePage(i, len, type)) {
+            return
+        }
         if (this.props.type == "index") {
             this.props.ajaxData(this.props.type, i)
             this.input.value = ""
@@ -45,6 +52,37 @@ export default class PageLi extends Component {
         }
     }
 
+    validatePage(pageNum, pageSum, type) {
+        let passValidate = true
+        switch (type) {
+            case 'jump':
+                if (pageNum <= 0) {
+                    this._alert("你输入的页码不正确，请重新输入")
+                    passValidate = false
+                }
+                if (pageNum > pageSum) {
+                    this._alert("你输入的页码超过最大页数，请重新输入")
+                    passValidate = false
+                }
+                break
+            case 'next':
+                if (pageNum > pageSum) {
+                    this._alert("已经是最后一页了")
+                    passValidate = false
+                }
+                break
+            case 'prev':
+                if (pageNum < 1) {
+                    this._alert("已经是第一页了")
+                    passValidate = false
+                }
+                break
+            default:
+                break
+        }
+        return passValidate
+    }
+
     render() {
         let pageTmp = [],
             pageList = this.props.pageList,
@@ -58,8 +96,11 @@ export default class PageLi extends Component {
         if (pageCurrent <= maxPage - edgePage) {
             if (len <= maxPage) {
                 for (let i = 1; i <= len; i++) {
-                    pageTmp.push(< li key={ i }>
-                        <Link to={this.params(i) } activeClassName="active">{ i }</Link></li >)
+                    pageTmp.push(
+                        < li key={ i }>
+                            <Link to={this.params(i) } activeClassName="active">{ i }</Link>
+                        </li >
+                    )
                 }
             } else {
                 for (let i = 1; i <= maxPage; i++) {
@@ -69,56 +110,38 @@ export default class PageLi extends Component {
             }
         } else if (pageCurrent > len) {
             console.error("页码错误")
-
         } else if (pageCurrent >= len - edgePage) {
             if (len <= maxPage - 1) {
-
                 for (let i = 1; i <= pageCurrent; i++) {
                     pageTmp.push(< li key={ i }>
                         <Link to={this.params(i) } activeClassName="active">{ i }</Link></li >)
                 }
-
             } else {
-
                 for (let i = len - (maxPage - 1); i <= len; i++) {
                     pageTmp.push(< li key={ i }>
                         <Link to={this.params(i) } activeClassName="active">{ i }</Link></li >)
                 }
-
             }
         } else {
-
             for (let i = pageCurrent - edgePage; i <= (Number(pageCurrent) + edgePage); i++) {
                 pageTmp.push(< li key={ i }>
                     <Link to={  this.params(i) } activeClassName="active">{ i }</Link></li >)
             }
-
         }
 
         return (
             <div className="page-list">
-                <ul className="container">
-                    <li onClick={ () => { if (pageCurrent <= 1) { this._alert("已经是第一页了"); return } this.swtichPage(Number(pageCurrent) - 1)} }>
-                        <a className="page-btn">上一页</a></li>
+                <ul className="page-container">
+                    <li onClick={() => this.swtichPage(Number(pageCurrent) - 1, 'prev', len)}>
+                        <a className="page-btn">上一页</a>
+                    </li>
                     { pageTmp }
-                    <li onClick={ () => {
-                    if (pageCurrent >= len) { this._alert("已经是最后一页了"); return };
-                    this.swtichPage(Number(pageCurrent) + 1) } }>
+                    <li onClick={ () => this.swtichPage(Number(pageCurrent) + 1, 'next', len) }>
                         <a className="page-btn"> 下一页 </a></li>
-                    <li><input type="text" ref={ el => { this.input = el } }/></li>
-                    <li onClick={ () => {
-                    if (this.input.value <= 0) {
-                        this._alert("你输入的页码不正确，请重新输入")
-                        return
-                    };
-                    if (this.input.value > len) {
-                        this._alert("你输入的页码超过最大页数，请重新输入")
-                        return
-                    }
-                    this.swtichPage(Number(this.input.value), "jump")
-                }
-            }>
-                        <a className="page-btn page-jump">跳转</a></li>
+                    <div className="search">
+                        <div><input type="text" ref={ el => { this.input = el } }/></div>
+                        <div onClick={ () => this.swtichPage(Number(this.input.value), 'jump', len) }>跳转</div>
+                    </div>
                 </ul>
             </div>
         )

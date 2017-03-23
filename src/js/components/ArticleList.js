@@ -2,7 +2,6 @@ import React, {Component} from "react"
 import {render} from 'react-dom'
 import * as actions from '../actions/index'
 import {Link, IndexLink} from 'react-router'
-import {hashHistory} from 'react-router'
 import '../../css/articleList.less'
 import { erilizeText } from '../utils/util'
 

@@ -1,10 +1,9 @@
 import React, {Component} from "react"
 import {render} from 'react-dom'
-import * as actions from '../actions/index'
-import {Link, IndexLink} from 'react-router'
+import { Link } from 'react-router'
 import '../../css/articleList.less'
 import { erilizeText } from '../utils/util'
-
+import { markdown } from 'markdown'
 export class ArticleList extends Component {
 
   componentWillMount() {
@@ -64,15 +63,18 @@ const ArticleItem = ({data}) => {
   return (
       <li className="article-li">
         <a href={ "/#" + encodeURI(data.name) + "/" + encodeURI(data.time.day) + "/" + encodeURI(data.title) }>
-          <div className="title"> { erilizeText(data.title, 15) } </div>
-          <div className="describe"> { data.content ? data.content.substr(0, 300) : "" }...</div>
+          <div className="title">{erilizeText(data.title, 15)}</div>
         </a>
-        <div className="info"> 作者： { data.name }&nbsp;&nbsp;
+        <div className="info">
+          作者： { data.name }&nbsp;&nbsp;
           阅读量：{ data.pv } &nbsp;&nbsp;
           发布时间：{ data.time.minute }&nbsp;&nbsp;
-          分类: <Link
-              to={{ pathname : '/',query : { category : data.category }}}>{ data.category == 1 ? "web开发" : "node开发"}</Link>
+          分类: <Link className="category" to={{ pathname : '/',query : { category : data.category }}}>{ data.category == 1 ? "web开发" : "node开发"}</Link>
         </div>
+        <a className="describe"href={ "/#" + encodeURI(data.name) + "/" + encodeURI(data.time.day) + "/" + encodeURI(data.title) }>
+          <div dangerouslySetInnerHTML={{__html:data.content ? markdown.toHTML(data.content.substr(0, 300)) : ''}} />
+        </a>
+
       </li>
   )
 }

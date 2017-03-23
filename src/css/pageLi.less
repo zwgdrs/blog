@@ -2,12 +2,23 @@
     .page-list {
         width: 80%;
         min-width: 700px;
-        margin: 0 auto 30px;
+        margin: 100px auto 30px;
+        padding-top: 10px;
+        border-top: 1px solid #eee;
+
         .page-container {
             width: 100%;
             display: flex;
             align-items: center;
             justify-content: space-between;
+
+            .page-btn {
+                cursor: pointer;
+                padding: 2px 5px;
+                color: white;
+                border-radius: 3px;
+                background-color: #24292e;
+            }
 
             .search {
                 display: flex;
@@ -17,7 +28,7 @@
                 height: 30px;
                 border: 1px solid #eee;
                 border-radius: 3px;
-
+                cursor: pointer;
                 input {
                     outline: 0;
                     border: 0;

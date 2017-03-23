@@ -98,14 +98,14 @@ export default class PageLi extends Component {
                 for (let i = 1; i <= len; i++) {
                     pageTmp.push(
                         < li key={ i }>
-                            <Link to={this.params(i) } activeClassName="active">{ i }</Link>
+                            <Link className="page-btn" to={this.params(i) } activeClassName="active">{ i }</Link>
                         </li >
                     )
                 }
             } else {
                 for (let i = 1; i <= maxPage; i++) {
                     pageTmp.push(< li key={ i }>
-                        <Link to={this.params(i) } activeClassName="active">{ i }</Link></li >)
+                        <Link className="page-btn" to={this.params(i) } activeClassName="active">{ i }</Link></li >)
                 }
             }
         } else if (pageCurrent > len) {
@@ -140,7 +140,7 @@ export default class PageLi extends Component {
                         <a className="page-btn"> 下一页 </a></li>
                     <div className="search">
                         <div><input type="text" ref={ el => { this.input = el } }/></div>
-                        <div onClick={ () => this.swtichPage(Number(this.input.value), 'jump', len) }>跳转</div>
+                        <div className="page-btn" onClick={() => this.swtichPage(Number(this.input.value), 'jump', len)}>跳转</div>
                     </div>
                 </ul>
             </div>

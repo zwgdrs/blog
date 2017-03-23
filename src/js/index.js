@@ -19,6 +19,7 @@ import { Provider } from 'react-redux'
 import { combineReducers, createStore, applyMiddleware, compose } from 'redux'
 import { Router, hashHistory } from 'react-router'
 import App from './containers/App.jsx'
+import "../css/style.less"
 
 const store = compose(
   applyMiddleware(thunk),
@@ -40,18 +41,7 @@ if (module.hot) {
         success();
     };
 }
-// const store = compose(
-//   applyMiddleware(thunk),
-//   window.devToolsExtension ? window.devToolsExtension() : f => f
-// )(createStore)(rootReducer)
-// if (module.hot) {
-//     // Enable Webpack hot module replacement for reducers
-//     module.hot.accept('./reducers', () => {
-//         const nextReducer = require('./reducers').default
-//         store.replaceReducer(nextReducer)
-//     })
-import "../css/style.less"
-// import '../form/css/form.css'
+
 const About = {
     path: 'about',
     getComponent(nextState, cb) {
@@ -60,6 +50,7 @@ const About = {
         })
     }
 }
+
 const Search = {
     path: 'search',
     getComponent(nextState, cb) {
@@ -68,6 +59,7 @@ const Search = {
         })
     }
 }
+
 const Details = {
     path: '/:name/:date/:title',
     getComponent(nextState, cb) {
@@ -76,6 +68,7 @@ const Details = {
         })
     }
 }
+
 const Publish = {
     path: 'publish',
     getComponent(nextState, cb) {
@@ -84,14 +77,7 @@ const Publish = {
         })
     }
 }
-// const ReactForm = {
-//     path: 'ReactForm',
-//     getComponent(nextState, cb) {
-//         require.ensure([], (require) => {
-//             return cb(null, require('../form/containers/App'))
-//         })
-//     }
-// }
+
 const Page404 = {
     path: '*',
     getComponent(nextState, cb) {
@@ -100,7 +86,6 @@ const Page404 = {
         })
     }
 }
-
 const rootRoute = {
     component: 'div',
     childRoutes: [{
@@ -111,11 +96,11 @@ const rootRoute = {
             About,
             Search,
             Details,
-            // ReactForm,
             Page404
         ]
     }]
 }
+
 render(( 
     <Provider store = { store }>
         <Router history = { hashHistory } routes = { rootRoute } />

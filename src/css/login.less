@@ -1,0 +1,72 @@
+:global {
+  .inner-mobBox {
+    position: relative;
+    width: 300px;
+    //height: 280px;
+    padding-bottom: 10px;
+    margin: 200px auto 0;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 0 15px 0 rgba(0,0,0,.3);
+    .close {
+      position: absolute;
+      right: 10px;
+      top: 0;
+    }
+
+
+    .title {
+      width: 100%;
+      padding-top: 20px;
+      margin-bottom: 20px;
+
+      .top {
+        text-align: center;
+        font-size: 18px;
+      }
+
+      .bottom {
+        text-align: center;
+        font-size: 12px;
+      }
+    }
+
+    .user-info {
+      margin-bottom: 30px;
+
+      .item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 50px;
+        border-top: 1px solid #eee;
+
+        >input {
+          width: 95%;
+          border: 0;
+          outline: 0;
+        }
+      }
+
+      & :last-child{
+        border-bottom: 1px solid #eee;
+      }
+    }
+
+
+    .btn {
+      width: 90%;
+      padding: 10px 0;
+      margin: 20px auto;
+      background-color: #0077d9;
+      cursor: pointer;
+      font-size: 14px;
+      line-height: 1;
+      text-align: center;
+      color: #fff;
+      border-radius: 3px;
+    }
+  }
+}
+

@@ -13,27 +13,44 @@
       margin: 0 auto;
       display: flex;
       align-items: center;
-      >form {
-        display: flex;
-        align-items: center;
-      }
-      >a {
+
+      .logo {
         color: white;
         margin-right: 20px;
       }
+
       .search-form {
-        background: rgba(0, 0, 0, .125);
-        //display: flex;
-        //align-items: center;
-        //justify-content: space-around;
+        display: flex;
+        align-items: center;
+        width: 350px;
+        height: 30px;
+        padding: 0 5px;
         color: white;
+        background: white;
+
         > input {
-          //background: rgba(0, 0, 0, .125);
           width: 280px;
           height: 30px;
-          //border-radius: 2px;
-          margin-right: 20px;
           color: black;
+          border: 0;
+          margin-right: 20px;
+        }
+
+        .btn {
+          padding: 2px 5px;
+          color: white;
+          border-radius: 2px;
+          cursor: pointer;
+          background-color: #24292e;
+          border: 1px solid white;
+          transition: all .2s linear 0s;
+
+          &:hover {
+            color: black;
+            border-radius: 2px;
+            background-color: white;
+            border: 1px solid #24292e;
+          }
         }
       }
     }

@@ -49,13 +49,13 @@ class Nav extends Component {
     //
     return (
       <div className="head">
-
-        <div className="logo content"><a href="/"> 剑月轩博客 </a>
-          <form className="search-form">
+        <div className="content">
+          <a href="/" className="logo"> 剑月轩博客 </a>
+          <div className="search-form">
             <input type="text" ref={el => { this.keyword = el }} name="keyword" placeholder="可以搜标题或者内容" />
             <div className="btn" onClick={() => { this.handleSubmit() }}> 提交</div>
-          </form>
-          <div className="top-tips">{isLogin}</div>
+          </div>
+          {isLogin}
         </div>
       </div>
     )

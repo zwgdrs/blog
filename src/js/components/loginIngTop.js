@@ -9,7 +9,7 @@ import '../../css/loginIngTop.less'
 class LoginIngTop extends Component{
   render(){
     return <div className="loginIn-top">{this.props.nav.info.name} 欢迎您的到来
-              <a href="javascript:;" onClick={(e)=>{this.props.actions.loginSubmit("loginOut")}}>退出登录</a>
+              <div className="btn" onClick={() => this.props.actions.loginSubmit("loginOut") }>退出登录</div>
             </div>
   }
 }

@@ -2,14 +2,27 @@
   .loginIn-top {
       position: absolute;
       right: 0;
-      width: 200px;
-      line-height: 0;
       display: flex;
       align-items: center;
       justify-content: space-between;
-    > a, span {
-        color: white;
-      }
+      color: white;
+    
+    .btn {
+      padding: 2px 5px;
+      margin-left: 20px;
+      color: black;
+      border-radius: 2px;
+      cursor: pointer;
+      background: white;
+      transition: all .2s linear 0s;
+      border: 1px solid #24292e;
 
+      &:hover {
+        border: 1px solid white;
+        color: white;
+        border-radius: 2px;
+        background-color: #24292e;
+      }
+    }
     }
 }

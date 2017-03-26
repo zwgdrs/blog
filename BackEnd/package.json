@@ -1,0 +1,43 @@
+{
+  "name": "reactBlog",
+  "version": "1.0.0",
+  "description": "reactBlog",
+  "main": "index.js",
+  "scripts": {
+    "node": "nodemon server.js",
+    "pm2node": "pm2 start server.js"
+  },
+  "keywords": [
+    "webpack",
+    "css-modules",
+    "react",
+    "react-css-modules",
+    "postcss",
+    "postcss-assets",
+    "postcss-sprites",
+    "boilerplate",
+    "gulpjs"
+  ],
+  "author": "zhuwei",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "1.9.0",
+    "compression": "^1.6.0",
+    "connect-flash": "0.1.1",
+    "connect-mongo": "0.8.1",
+    "connect-multiparty": "^2.0.0",
+    "cookie-parser": "1.3.3",
+    "ejs": "1.0.0",
+    "es5-shim": "^4.5.9",
+    "es6-promise": "^4.0.5",
+    "es6-shim": "^0.35.2",
+    "eventsource-polyfill": "^0.9.6",
+    "express": "4.10.2",
+    "express-session": "1.9.1",
+    "fetch-ie8": "^1.4.3",
+    "mongodb": "2.0.33",
+    "morgan": "1.3.1",
+    "multer": "^1.2.0",
+    "serve-favicon": "2.1.5"
+  }
+}

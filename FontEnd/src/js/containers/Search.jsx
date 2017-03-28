@@ -9,7 +9,7 @@ import PageLi from '../components/PageLi'
 export class SearchComponent extends Component {
     render() {
         let data = this.props.search;
-        return <div className = "search">
+        return <div styleName = "search">
             <ArticleList articleList = { data.data } ajaxData = { this.props.actions.ajaxData } type = "search" query = { this.props.location.query } /> 
             <PageLi pageList = { data.page } ajaxData = { this.props.actions.ajaxData } type = "search" query = { this.props.location.query } actions = {this.props.actions} />
             </div>

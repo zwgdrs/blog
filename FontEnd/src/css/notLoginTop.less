@@ -1,27 +1,25 @@
-:global {
-  .not-login {
-    position: absolute;
-    right: 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.not-login {
+  position: absolute;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 
-    .btn {
-      padding: 2px 5px;
-      margin-right: 20px;
-      color: black;
+  .btn {
+    padding: 2px 5px;
+    margin-right: 20px;
+    color: black;
+    border-radius: 2px;
+    cursor: pointer;
+    background: white;
+    transition: all .2s linear 0s;
+    border: 1px solid #24292e;
+
+    &:hover {
+      border: 1px solid white;
+      color: white;
       border-radius: 2px;
-      cursor: pointer;
-      background: white;
-      transition: all .2s linear 0s;
-      border: 1px solid #24292e;
-
-      &:hover {
-        border: 1px solid white;
-        color: white;
-        border-radius: 2px;
-        background-color: #24292e;
-      }
+      background-color: #24292e;
     }
   }
 }

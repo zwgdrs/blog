@@ -1,60 +1,59 @@
-:global {
-  .head {
-    width: 100%;
-    min-width: 700px;
-    height: 50px;
-    padding: 12px 0;
-    margin: 0 auto;
-    background-color: #24292e;
+.head {
+  width: 100%;
+  min-width: 700px;
+  height: 50px;
+  padding: 12px 0;
+  margin: 0 auto;
+  background-color: #24292e;
 
-    .content {
-      position: relative;
-      width: 80%;
-      margin: 0 auto;
+  .content {
+    position: relative;
+    width: 80%;
+    min-width: 650px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+
+    .logo {
+      color: white;
+      margin-right: 20px;
+    }
+
+    .search-form {
       display: flex;
       align-items: center;
+      width: 350px;
+      height: 30px;
+      padding: 0 5px;
+      color: white;
+      background: white;
 
-      .logo {
-        color: white;
+      > input {
+        width: 280px;
+        height: 30px;
+        color: black;
+        border: 0;
         margin-right: 20px;
       }
 
-      .search-form {
-        display: flex;
-        align-items: center;
-        width: 350px;
-        height: 30px;
-        padding: 0 5px;
+      .btn {
+        padding: 2px 5px;
         color: white;
-        background: white;
+        border-radius: 2px;
+        cursor: pointer;
+        background-color: #24292e;
+        border: 1px solid white;
+        transition: all .2s linear 0s;
 
-        > input {
-          width: 280px;
-          height: 30px;
+        &:hover {
           color: black;
-          border: 0;
-          margin-right: 20px;
-        }
-
-        .btn {
-          padding: 2px 5px;
-          color: white;
           border-radius: 2px;
-          cursor: pointer;
-          background-color: #24292e;
-          border: 1px solid white;
-          transition: all .2s linear 0s;
-
-          &:hover {
-            color: black;
-            border-radius: 2px;
-            background-color: white;
-            border: 1px solid #24292e;
-          }
+          background-color: white;
+          border: 1px solid #24292e;
         }
       }
     }
   }
-
 }
+
 

@@ -7,8 +7,12 @@ import {Link, IndexLink} from 'react-router'
 import NoLoginTop from '../components/noLoginTop'
 import LoginIngTop from '../components/loginIngTop'
 import {hashHistory} from 'react-router'
-import '../../css/nav.less'
-
+// import '../../css/nav.less'
+import styles from '../../css/nav.less'
+import CSSModules from 'react-css-modules'
+@CSSModules(styles, {
+  allowMultiple: true
+})
 class Nav extends Component {
   constructor(props) {
     super(props)
@@ -48,12 +52,12 @@ class Nav extends Component {
     }
     //
     return (
-      <div className="head">
-        <div className="content">
-          <a href="/" className="logo"> 剑月轩博客 </a>
-          <div className="search-form">
+      <div styleName="head">
+        <div styleName="content">
+          <a href="/" styleName="logo"> 剑月轩博客 </a>
+          <div styleName="search-form">
             <input type="text" ref={el => { this.keyword = el }} name="keyword" placeholder="可以搜标题或者内容" />
-            <div className="btn" onClick={() => { this.handleSubmit() }}> 提交</div>
+            <div className="black-btn" onClick={() => { this.handleSubmit() }}> 提交</div>
           </div>
           {isLogin}
         </div>

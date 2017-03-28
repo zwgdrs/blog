@@ -98,14 +98,14 @@ export default class PageLi extends Component {
                 for (let i = 1; i <= len; i++) {
                     pageTmp.push(
                         < li key={ i }>
-                            <Link className="page-btn" to={this.params(i) } activeClassName="active">{ i }</Link>
+                            <Link className="black-btn" to={this.params(i) } activestyleName="active">{ i }</Link>
                         </li >
                     )
                 }
             } else {
                 for (let i = 1; i <= maxPage; i++) {
                     pageTmp.push(< li key={ i }>
-                        <Link className="page-btn" to={this.params(i) } activeClassName="active">{ i }</Link></li >)
+                        <Link className="black-btn" to={this.params(i) } activestyleName="active">{ i }</Link></li >)
                 }
             }
         } else if (pageCurrent > len) {
@@ -114,33 +114,33 @@ export default class PageLi extends Component {
             if (len <= maxPage - 1) {
                 for (let i = 1; i <= pageCurrent; i++) {
                     pageTmp.push(< li key={ i }>
-                        <Link to={this.params(i) } activeClassName="active">{ i }</Link></li >)
+                        <Link to={this.params(i) } activestyleName="active">{ i }</Link></li >)
                 }
             } else {
                 for (let i = len - (maxPage - 1); i <= len; i++) {
                     pageTmp.push(< li key={ i }>
-                        <Link to={this.params(i) } activeClassName="active">{ i }</Link></li >)
+                        <Link to={this.params(i) } activestyleName="active">{ i }</Link></li >)
                 }
             }
         } else {
             for (let i = pageCurrent - edgePage; i <= (Number(pageCurrent) + edgePage); i++) {
                 pageTmp.push(< li key={ i }>
-                    <Link to={  this.params(i) } activeClassName="active">{ i }</Link></li >)
+                    <Link to={  this.params(i) } activestyleName="active">{ i }</Link></li >)
             }
         }
 
         return (
-            <div className="page-list">
-                <ul className="page-container">
+            <div styleName="page-list">
+                <ul styleName="page-container">
                     <li onClick={() => this.swtichPage(Number(pageCurrent) - 1, 'prev', len)}>
-                        <a className="page-btn">上一页</a>
+                        <a styleName="page-btn">上一页</a>
                     </li>
                     { pageTmp }
                     <li onClick={ () => this.swtichPage(Number(pageCurrent) + 1, 'next', len) }>
-                        <a className="page-btn"> 下一页 </a></li>
-                    <div className="search">
+                        <a className="black-btn"> 下一页 </a></li>
+                    <div styleName="search">
                         <div><input type="text" ref={ el => { this.input = el } }/></div>
-                        <div className="page-btn" onClick={() => this.swtichPage(Number(this.input.value), 'jump', len)}>跳转</div>
+                        <div className="black-btn" onClick={() => this.swtichPage(Number(this.input.value), 'jump', len)}>跳转</div>
                     </div>
                 </ul>
             </div>

@@ -4,7 +4,12 @@ import {connect} from 'react-redux'
 import {bindActionCreators} from 'redux'
 import * as actions from '../actions/index'
 import {markdown} from 'markdown'
-import '../../css/publish.less'
+import styles from '../../css/publish.less'
+import CSSModules from 'react-css-modules'
+@CSSModules(styles, {
+    allowMultiple: true
+})
+// import '../../css/publish.less'
 
 export class PublishComponent extends Component {
     constructor(props) {
@@ -56,36 +61,36 @@ export class PublishComponent extends Component {
     }
 
     render() {
-        return <form className="publish" ref={el=>{this.form = el}}>
-            <div className="title">
+        return <form styleName="publish" ref={el=>{this.form = el}}>
+            <div styleName="title">
                 <input type="text" ref={el=>{this.title = el}} name="title" placeholder="标题: 当年逐日的夸父" />
             </div>
-            <div className="content">
-                <div className="edit">
+            <div styleName="content">
+                <div styleName="edit">
                     <textarea id="editText" placeholder="请输入文章内容" ref={el=>{this.edit = el}} rows="10" name="content"
                               onInput={this.editor} />
                 </div>
-                <div className="preview">
+                <div styleName="preview">
                     <div id="previewText" ref={el=>{this.preview = el}}/>
                 </div>
             </div>
-            <div className="bottom-container">
-                <div className="upload">
-                    <div className="name">上传封面：</div>
-                    <div className="inputDiv">
+            <div styleName="bottom-container">
+                <div styleName="upload">
+                    <div styleName="name">上传封面：</div>
+                    <div styleName="inputDiv">
                         <input type="file" name="upload" ref={el => this.file = el } accept="*.jpg" />
                     </div>
                 </div>
-                <div className="category">
-                    <div className="name">文章分类：</div>
-                    <div className="inputDiv">
+                <div styleName="category">
+                    <div styleName="name">文章分类：</div>
+                    <div styleName="inputDiv">
                         <select name="category" ref={el => this.category = el }>
                             <option value="1">web开发</option>
                             <option value="2">node开发</option>
                         </select>
                     </div>
                 </div>
-                <div className="btn" onClick={() => this.handleSubmit()} >发布文章</div>
+                <div styleName="btn" onClick={() => this.handleSubmit()} >发布文章</div>
             </div>
 
         </form>

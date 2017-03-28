@@ -8,7 +8,7 @@ import PageLi from './PageLi'
 export class CategoryComponent extends Component {
     render() {
         let data = this.props.category;
-        return <div className = "search">
+        return <div styleName = "search">
             <ArticleList articleList = { data.data } ajaxData = { this.props.actions.searchSubmit } type = "search" query = { this.props.location.query } /> 
             <PageLi pageList = { data.page } ajaxData = { this.props.actions.searchSubmit } type = "search" query = { this.props.location.query } actions = {this.props.actions} />
             </div>

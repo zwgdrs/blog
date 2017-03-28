@@ -4,14 +4,21 @@ import {connect} from 'react-redux'
 import {bindActionCreators} from 'redux'
 import * as actions from '../actions/index'
 import {markdown} from 'markdown'
-import '../../css/details.less'
-const MessageItem = ({data})=> {
-    return <div className="messageItem">
-        <div className="messageAuthor"><span className="author">{data.name}：说</span></div>
-        <div className="messageContent">{data.message}</div>
-        <div className="messageTime"><span>{data.time}</span></div>
-    </div>
-}
+// import '../../css/details.less'
+import MessageItem from '../components/MessageItem.jsx'
+import styles from '../../css/details.less'
+import CSSModules from 'react-css-modules'
+@CSSModules(styles, {
+    allowMultiple: true
+})
+    
+// const MessageItem = ({data})=> {
+//     return <div styleName="messageItem">
+//         <div styleName="messageAuthor"><span styleName="author">{data.name}：说</span></div>
+//         <div styleName="messageContent">{data.message}</div>
+//         <div styleName="messageTime"><span>{data.time}</span></div>
+//     </div>
+// }
 export class DetailsComponent extends Component {
     constructor(props) {
         super(props)
@@ -55,21 +62,21 @@ export class DetailsComponent extends Component {
         }
 
         return (
-            <div className="article-details">
+            <div styleName="article-details">
                 <h1>{data.title}</h1>
-                <div className="info">作者：{data.name}&nbsp;&nbsp;&nbsp;&nbsp;阅读量：{data.pv}&nbsp;&nbsp;&nbsp;&nbsp;
+                <div>作者：{data.name}&nbsp;&nbsp;&nbsp;&nbsp;阅读量：{data.pv}&nbsp;&nbsp;&nbsp;&nbsp;
                     发布时间：{data.time ? data.time.minute : ""}</div>
-                <div className="main">
-                    <div className="cover-img" dangerouslySetInnerHTML={{__html:img}}></div>
-                    <div className="content"
+                <div styleName="main">
+                    <div dangerouslySetInnerHTML={{__html:img}}></div>
+                    <div styleName="content"
                          dangerouslySetInnerHTML={{__html:data.content ? markdown.toHTML(data.content) : ''}}>
                     </div>
                 </div>
-                <div className="message-box">
+                <div styleName="message-box">
                     {messageItemTmp}
-                    <div className="send-message">
+                    <div styleName="send-message">
                         <textarea name="message" id="" cols="30" rows="5" placeholder="说点什么呢" ref={el=>{this.message=el}}></textarea>
-                        <div className="btn" onClick={()=>{this.commentsSubmit()}}>提交</div>
+                        <div styleName="btn" onClick={()=>{this.commentsSubmit()}}>提交</div>
                     </div>
 
                 </div>

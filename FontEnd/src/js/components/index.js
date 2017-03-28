@@ -12,7 +12,7 @@ export class Index extends Component {
         var categoryType = type == 'category'?location.hash.match(/category=\d+/).join('').match(/\d/)[0]:''
         let data = this.props.index;
         return (
-          <div className = "index" >
+          <div styleName = "index" >
             <ArticleList articleList = { data.data } ajaxData = { this.props.actions.ajaxData } type = { type } query = { this.props.query } />
               <PageLi pageList = { data.page } ajaxData = { this.props.actions.ajaxData } type = { type } query = { this.props.query } actions = { this.props.actions } categoryType = { categoryType }/>
           </div>

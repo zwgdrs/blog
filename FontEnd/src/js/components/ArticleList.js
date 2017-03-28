@@ -1,11 +1,16 @@
 import React, {Component} from "react"
 import {render} from 'react-dom'
 import {Link} from 'react-router'
-import '../../css/articleList.less'
 import {erilizeText} from '../utils/util'
 import {markdown} from 'markdown'
-export class ArticleList extends Component {
+import ArticleItem from './ArticleItem.jsx'
+import styles from '../../css/articleList.less'
+import CSSModules from 'react-css-modules'
+@CSSModules(styles, {
+    allowMultiple: true
+})
 
+export class ArticleList extends Component {
     componentWillMount() {
         console.log("componentWillMount,插入DOM前", this.props)
         if (this.props.type == "index") {
@@ -53,28 +58,12 @@ export class ArticleList extends Component {
                 articleTmp.push(< ArticleItem key={ i } data={ data[i] }/>)
             }
         }
+        console.log(articleTmp)
         return (
             <div>
-                <ul className="article-list"> { articleTmp.length ? articleTmp : "暂无搜索结果" } </ul>
+                <ul styleName="article-list"> { articleTmp.length ? articleTmp : "暂无搜索结果" } </ul>
             </div>
         )
     }
 }
 
-
-const ArticleItem = ({data}) => {
-    return (
-        <li className="article-li">
-            <div className="title">{erilizeText(data.title, 15)}</div>
-            <div className="info">
-                作者： { data.name }&nbsp;&nbsp;
-                阅读量：{ data.pv } &nbsp;&nbsp;
-                发布时间：{ data.time.minute }&nbsp;&nbsp;
-                分类: <Link className="category"
-                          to={{ pathname : '/',query : { category : data.category }}}>{ data.category == 1 ? "web开发" : "node开发"}</Link>
-            </div>
-            <div className="show-article" dangerouslySetInnerHTML={{__html:data.content ? markdown.toHTML(data.content.substr(0, 300)) : ''}}/>
-            <a className="spread-article" href={ "/#" + encodeURI(data.name) + "/" + encodeURI(data.time.day) + "/" + encodeURI(data.title) }> 阅读全文 </a>
-        </li>
-    )
-}

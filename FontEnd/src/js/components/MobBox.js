@@ -5,7 +5,11 @@ import {bindActionCreators} from 'redux'
 import * as actions from '../actions/index'
 import Login from './login'
 import Reg from './reg'
-import '../../css/mobBox.less'
+import styles from '../../css/mobBox.less'
+import CSSModules from 'react-css-modules'
+@CSSModules(styles, {
+  allowMultiple: true
+})
 export class MobBox extends Component {
   constructor(props) {
     super(props)
@@ -14,9 +18,10 @@ export class MobBox extends Component {
   render() {
     let type = this.props.mobBoxData.isShow
     type = type ? (type == "loginShow" ? <Login /> : <Reg />) : type
+        // <div onClick={()=>{this.props.actions.mobBoxData("mobBoxClose")}}></div>
     return (
-      type && <div className="mobBox">
-        <div className="bg" onClick={()=>{this.props.actions.mobBoxData("mobBoxClose")}}></div>
+      type && <div styleName="mobBox">
+
         {type}
       </div>
     )

@@ -3,7 +3,8 @@ import {render} from 'react-dom'
 import {connect} from 'react-redux'
 import {bindActionCreators} from 'redux'
 import * as actions from '../actions/index'
-import '../../css/tipsBox.less'
+import SystemModal from './systemModal.jsx'
+
 export class TipsBox extends Component {
   constructor(props) {
     super(props)
@@ -12,16 +13,25 @@ export class TipsBox extends Component {
   componentWillUpdate() {
     console.log("Login=>componentWillUpdate", this.props)
   }
-
+// <div styleName="tips-box" style={{ "display": this.props.tips.messgage ? "none" : "block" } }>
+// <div styleName="tips-bg">测试title</div>
+// <div styleName="main">
+// <span styleName="text">{this.props.tips.messgage || '测试'}</span></div>
+// </div>
   render() {
+    console.log(this.props.tips)
+      const data = {
+          onSubmit: this.submitLogin,
+          self: this,
+          title: {
+              text: this.props.tips.title,
+              desc: this.props.tips.messgage
+          },
+          footer: '确定'
+      }
     return (
-      <div className="tipsBox" style={{ "display": this.props.tips.messgage ? "block" : "none" } }>
-        <div className="tipsBg"></div>
-        <div className="main">
-          <span className="text">{this.props.tips.messgage}</span></div>
-      </div>
+        this.props.tips.messgage ? <SystemModal data={data} /> : <div style={{display: 'none'}}/>
     )
-
   }
 }
 

@@ -30,7 +30,7 @@ class WarnDialog extends Component {
                 <i styleName="close" onClick={() => {
                     this.props.actions.mobBoxData("mobBoxClose")
                 }}>x</i>
-                <div styleName="content">{data.title.text}</div>
+                <div styleName="content">{data.title.desc}</div>
             </div>
         )
     }

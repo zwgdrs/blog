@@ -1,0 +1,31 @@
+.main {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 320px;
+  height: 100%;
+  background: rgba(0, 0, 0, .8);
+  -webkit-animation: go-left .2s ease 0s forwards;
+  .header {
+    width : 100%;
+
+  }
+
+  .content {
+    width: 100%;
+  }
+
+  .footer {
+    width: 100%;
+  }
+}
+
+@-webkit-keyframes go-left {
+  0%{
+    transform: translateX(320px);
+  }
+  100%{
+    transform: translateX(0);
+  }
+}

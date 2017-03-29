@@ -299,7 +299,7 @@ export const requestAPI = "http://localhost:8080/"
             dispatch(tipsBox(messgage, "showTips"))
             setTimeout(function() {
                 dispatch(tipsBox(messgage, "hideTips"))
-            }, 1000)
+            }, 5000)
         }
     }
     /*Store里面执行的提示弹出框

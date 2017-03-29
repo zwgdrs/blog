@@ -5,6 +5,11 @@ import { bindActionCreators } from 'redux'
 import * as actions from '../actions/index'
 import { ArticleList } from './ArticleList'
 import PageLi from './PageLi'
+import styles from '../../css/index.less'
+import CSSModules from 'react-css-modules'
+@CSSModules(styles, {
+    allowMultiple: true
+})
 
 export class Index extends Component {
     render() {
@@ -12,9 +17,9 @@ export class Index extends Component {
         var categoryType = type == 'category'?location.hash.match(/category=\d+/).join('').match(/\d/)[0]:''
         let data = this.props.index;
         return (
-          <div styleName = "index" >
-            <ArticleList articleList = { data.data } ajaxData = { this.props.actions.ajaxData } type = { type } query = { this.props.query } />
-              <PageLi pageList = { data.page } ajaxData = { this.props.actions.ajaxData } type = { type } query = { this.props.query } actions = { this.props.actions } categoryType = { categoryType }/>
+          <div styleName="main" >
+            <ArticleList articleList = { data.data } ajaxData={ this.props.actions.ajaxData } type={ type } query={ this.props.query } />
+              <PageLi pageList={ data.page } ajaxData = { this.props.actions.ajaxData } type={ type } query={ this.props.query } actions={ this.props.actions } categoryType={ categoryType }/>
           </div>
         )
     }

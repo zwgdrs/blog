@@ -17,7 +17,6 @@ class SystemModel extends Component {
 
     render () {
         const { data } = this.props
-        console.log(data)
         return (
             <div styleName="container">
                 <i styleName="close" onClick={()=>{this.props.actions.mobBoxData("mobBoxClose")}}>x</i>

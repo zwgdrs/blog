@@ -5,11 +5,15 @@ import { bindActionCreators } from 'redux'
 import * as actions from '../actions/index'
 import { ArticleList } from '../components/ArticleList'
 import PageLi from '../components/PageLi'
-
+import styles from '../../css/search.less'
+import CSSModules from 'react-css-modules'
+@CSSModules(styles, {
+    allowMultiple: true
+})
 export class SearchComponent extends Component {
     render() {
         let data = this.props.search;
-        return <div styleName = "search">
+        return <div styleName="search">
             <ArticleList articleList = { data.data } ajaxData = { this.props.actions.ajaxData } type = "search" query = { this.props.location.query } /> 
             <PageLi pageList = { data.page } ajaxData = { this.props.actions.ajaxData } type = "search" query = { this.props.location.query } actions = {this.props.actions} />
             </div>

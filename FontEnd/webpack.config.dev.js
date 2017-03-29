@@ -70,7 +70,7 @@ module.exports = {
 				test: /\.(woff|woff2|svg|eot|ttf)\??.*$/,
 				loader: 'file?name=./static/fonts/[name].[ext]',
 				include: path.join(__dirname, 'src/css/font-awesome/fonts/')
-			},
+			}
 		]
 	},
 	resolve: {

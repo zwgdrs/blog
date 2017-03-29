@@ -3,7 +3,7 @@ import {render} from 'react-dom'
 import {connect} from 'react-redux'
 import {bindActionCreators} from 'redux'
 import * as actions from '../actions/index'
-import SystemModal from './systemModal.jsx'
+import WarnDialog from './warnDialog.jsx'
 
 export class TipsBox extends Component {
   constructor(props) {
@@ -30,7 +30,7 @@ export class TipsBox extends Component {
           footer: '确定'
       }
     return (
-        this.props.tips.messgage ? <SystemModal data={data} /> : <div style={{display: 'none'}}/>
+        this.props.tips.messgage ? <WarnDialog data={data} /> : <div style={{display: 'none'}}/>
     )
   }
 }

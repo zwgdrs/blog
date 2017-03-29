@@ -75,15 +75,15 @@ export class PublishComponent extends Component {
                 </div>
             </div>
             <div styleName="bottom-container">
-                <div styleName="upload">
-                    <div styleName="name">上传封面：</div>
-                    <div styleName="inputDiv">
+                <div>
+                    <div>上传封面：</div>
+                    <div>
                         <input type="file" name="upload" ref={el => this.file = el } accept="*.jpg" />
                     </div>
                 </div>
                 <div styleName="category">
-                    <div styleName="name">文章分类：</div>
-                    <div styleName="inputDiv">
+                    <div>文章分类：</div>
+                    <div>
                         <select name="category" ref={el => this.category = el }>
                             <option value="1">web开发</option>
                             <option value="2">node开发</option>

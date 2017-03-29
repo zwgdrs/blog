@@ -2,13 +2,17 @@ import React, {Component} from "react"
 import {connect} from 'react-redux'
 import {bindActionCreators} from 'redux'
 import * as actions from '../actions/index'
-import '../../css/loginIngTop.less'
+import styles from '../../css/loginIngTop.less'
+import CSSModules from 'react-css-modules'
+@CSSModules(styles, {
+  allowMultiple: true
+})
 
 class LoginIngTop extends Component {
     render() {
         return (
             <div styleName="loginIn-top">{this.props.nav.info.name} 欢迎您的到来
-                <div className="btn" onClick={() => this.props.actions.loginSubmit("loginOut") }>退出登录</div>
+                <div styleName="btn" onClick={() => this.props.actions.loginSubmit("loginOut") }>退出登录</div>
             </div>
         )
     }

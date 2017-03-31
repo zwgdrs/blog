@@ -1,8 +1,6 @@
 import React, {Component} from "react"
-import {render} from 'react-dom'
 import {connect} from 'react-redux'
 import {bindActionCreators} from 'redux'
-import * as actions from '../actions/index'
 import * as publishActions from '../actions/publish'
 import * as alertActions from '../actions/alert'
 import {markdown} from 'markdown'
@@ -27,7 +25,6 @@ export class PublishComponent extends Component {
     }
 
     handleSubmit() {
-        //let data="title="+this.title.value+"&content="+this.content.value+"&upload="+this.file.value
         let _alert = this.props.alertActions._alert,
             titleValue = this.title.value.trim(),
             contentValue = this.edit.value.trim()

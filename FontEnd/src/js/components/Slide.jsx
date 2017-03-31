@@ -1,9 +1,4 @@
 import React, {Component} from "react"
-import {render} from 'react-dom'
-import {connect} from 'react-redux'
-import {bindActionCreators} from 'redux'
-import * as actions from '../actions/index'
-import SystemModal from './systemModal.jsx'
 import styles from '../../css/slide.less'
 import CSSModules from 'react-css-modules'
 @CSSModules(styles, {

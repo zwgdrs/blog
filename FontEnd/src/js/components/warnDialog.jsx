@@ -1,6 +1,5 @@
 import React, {Component} from 'react'
 import {connect} from 'react-redux'
-import * as actions from '../actions/index'
 import * as modalActions from '../actions/modal'
 import {bindActionCreators} from 'redux'
 import styles from '../../css/warnDialog.less'

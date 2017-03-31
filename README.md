@@ -11,7 +11,8 @@
 
 ### 运行
     git clone https://github.com/zwgdrs/blog.git
-    npm install
+    cd FontEnd && npm install
+    cd BackEnd && npm install
     启动mongo：  ./mongoDb.sh
     启动: npm start
 

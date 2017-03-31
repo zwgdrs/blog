@@ -1,7 +1,7 @@
 import React, {Component} from "react"
 import {connect} from 'react-redux'
 import {bindActionCreators} from 'redux'
-import * as actions from '../actions/index'
+import * as loginSubmit from '../actions/login'
 import styles from '../../css/loginIngTop.less'
 import CSSModules from 'react-css-modules'
 @CSSModules(styles, {
@@ -12,7 +12,7 @@ class LoginIngTop extends Component {
     render() {
         return (
             <div styleName="loginIn-top">{this.props.nav.info.name} 欢迎您的到来
-                <div styleName="btn" onClick={() => this.props.actions.loginSubmit("loginOut") }>退出登录</div>
+                <div styleName="btn" onClick={() => this.props.loginSubmit.loginSubmit("loginOut") }>退出登录</div>
             </div>
         )
     }
@@ -22,7 +22,7 @@ const mapStateToProps = (state) => {
 }
 const mapDispatchToProps = (dispatch) => {
     return {
-        actions: bindActionCreators(actions, dispatch),
+        loginSubmit: bindActionCreators(loginSubmit, dispatch),
     }
 }
 export default connect(

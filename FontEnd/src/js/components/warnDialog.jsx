@@ -1,6 +1,7 @@
 import React, {Component} from 'react'
 import {connect} from 'react-redux'
 import * as actions from '../actions/index'
+import * as modalActions from '../actions/modal'
 import {bindActionCreators} from 'redux'
 import styles from '../../css/warnDialog.less'
 import CSSModules from 'react-css-modules'
@@ -17,7 +18,7 @@ class WarnDialog extends Component {
         let animationCount = 0
         this.container.addEventListener('animationend',(e) => {
             if (animationCount === 1) {
-                this.props.actions.mobBoxData("mobBoxClose")
+                this.props.modalActions.mobBoxData("mobBoxClose")
             }
             animationCount ++
         }, false)
@@ -28,7 +29,7 @@ class WarnDialog extends Component {
         return (
             <div styleName="container" ref={ (e) => this.container = e }>
                 <i styleName="close" onClick={() => {
-                    this.props.actions.mobBoxData("mobBoxClose")
+                    this.props.modalActions.mobBoxData("mobBoxClose")
                 }}>x</i>
                 <div styleName="content">{data.title.desc}</div>
             </div>
@@ -41,7 +42,7 @@ const mapStateToProps = (state) => {
 }
 const mapDispatchToProps = (dispatch) => {
     return {
-        actions: bindActionCreators(actions, dispatch),
+        modalActions: bindActionCreators(modalActions, dispatch),
     }
 }
 export default connect(

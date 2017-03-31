@@ -2,23 +2,18 @@ import React, {Component} from "react"
 import {render} from 'react-dom'
 import {connect} from 'react-redux'
 import {bindActionCreators} from 'redux'
-import * as actions from '../actions/index'
+// import * as actions from '../actions/index'
+import * as detailsActions from '../actions/details'
+import * as alertActions from '../actions/alert'
+import * as ajaxActions from '../actions/ajax'
 import {markdown} from 'markdown'
-// import '../../css/details.less'
 import MessageItem from '../components/MessageItem.jsx'
 import styles from '../../css/details.less'
 import CSSModules from 'react-css-modules'
 @CSSModules(styles, {
     allowMultiple: true
 })
-    
-// const MessageItem = ({data})=> {
-//     return <div styleName="messageItem">
-//         <div styleName="messageAuthor"><span styleName="author">{data.name}：说</span></div>
-//         <div styleName="messageContent">{data.message}</div>
-//         <div styleName="messageTime"><span>{data.time}</span></div>
-//     </div>
-// }
+
 export class DetailsComponent extends Component {
     constructor(props) {
         super(props)
@@ -27,11 +22,11 @@ export class DetailsComponent extends Component {
     }
 
     componentDidMount() {
-        this.props.actions.ajaxData("details", this.props.params)
+        this.props.ajaxActions.ajaxData("details", this.props.params)
     }
 
     commentsSubmit() {
-        let _alert = this.props.actions._alert,
+        let _alert = this.props.alertActions._alert,
             nameVlue = this.name.value.trim(),
             messageVlue = this.message.value.trim()
         if (nameVlue.length < 2) {
@@ -46,7 +41,7 @@ export class DetailsComponent extends Component {
         let data = "name=" + nameVlue + "&email=" + this.email.value + "&message=" + messageVlue
         let json = {"name": this.name.value, "email": this.email.value}
         window.localStorage['commentInfo'] = JSON.stringify(json)
-        this.props.actions.commentsSubmit(data, this.props.params)
+        this.props.detailsActions.commentsSubmit(data, this.props.params)
     }
 
     render() {
@@ -90,12 +85,15 @@ const mapStateToProps = (state)=> {
 }
 const mapDispatchToProps = (dispatch)=> {
     return {
-        actions: bindActionCreators(actions, dispatch),
+        // actions: bindActionCreators(actions, dispatch),
+        detailsActions: bindActionCreators(detailsActions, dispatch),
+        ajaxActions: bindActionCreators(ajaxActions, dispatch),
+        alertActions: bindActionCreators(alertActions, dispatch),
     }
 }
 const Details = connect(
-    mapStateToProps,//只要 Redux store 发生改变，mapStateToProps 函数就会被调用。该回调函数必须返回一个纯对象，这个对象会与组件的 props 合并,如果你省略了这个参数，你的组件将不会监听 Redux store。如果指定了该回调函数中的第二个参数 ownProps，则该参数的值为传递到组件的 props，而且只要组件接收到新的 props，mapStateToProps 也会被调用
-    mapDispatchToProps//如果传递的是一个对象，那么每个定义在该对象的函数都将被当作 Redux action creator，而且这个对象会与 Redux store 绑定在一起，其中所定义的方法名将作为属性名，合并到组件的 props 中。如果传递的是一个函数，该函数将接收一个 dispatch 函数，然后由你来决定如何返回一个对象，这个对象通过 dispatch 函数与 action creator 以某种方式绑定在一起（提示：你也许会用到 Redux 的辅助函数 bindActionCreators()）。如果你省略这个 mapDispatchToProps 参数，默认情况下，dispatch 会注入到你的组件 props 中。如果指定了该回调函数中第二个参数 ownProps，该参数的值为传递到组件的 props，而且只要组件接收到新 props，mapDispatchToProps 也会被调用。
+    mapStateToProps,
+    mapDispatchToProps
 )(DetailsComponent)
 
 module.exports = Details

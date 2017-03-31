@@ -77,16 +77,37 @@ export default class App extends Component {
             mainStyle = 'main main-go-left'
             floatIconStyle = 'float-icon icon-go-left'
         }
+        const slideInfo = {
+            userInfo: {
+                img: 'http://i3.17173.itc.cn/2011/jsol/2011/12/31/0069_js_07.jpg',
+                name: '剑月轩',
+                desc: '随便描述点啥都行'
+            },
+            summaryInfo: {
+                summary: {
+                    article: 30,
+                    tags: 10,
+                },
+                rss: 'url'
+            },
+            linkInfo: [
+                {name: 'zhihu', url: ''},
+                {name: 'github', url: ''},
+                {name: 'zhihu', url: ''},
+                {name: 'zhihu', url: ''},
+                {name: 'zhihu', url: ''},
+            ]
+        }
         return (
             <div styleName="page" ref={(ref) => {this.page = ref}}>
-                {this.state.slideBar && <Slide />}
+                {this.state.slideBar && <Slide data={slideInfo} />}
                 <div styleName={mainStyle}>
                     <Nav />
                     <div styleName="nav-box">
                         <ul styleName="content">
-                            {this.navigatorInfo.map((item) => {
+                            {this.navigatorInfo.map((item, index) => {
                                 return (
-                                    <li>
+                                    <li key={index}>
                                         <IndexLink to={item.url} styleName="link">
                                             <i className={item.icon} aria-hidden="true"></i>
                                             <div>{item.desc}</div>

@@ -3,13 +3,14 @@ import {render} from 'react-dom'
 import {connect} from 'react-redux'
 import {bindActionCreators} from 'redux'
 import * as actions from '../actions/index'
+import * as publishActions from '../actions/publish'
+import * as alertActions from '../actions/alert'
 import {markdown} from 'markdown'
 import styles from '../../css/publish.less'
 import CSSModules from 'react-css-modules'
 @CSSModules(styles, {
     allowMultiple: true
 })
-// import '../../css/publish.less'
 
 export class PublishComponent extends Component {
     constructor(props) {
@@ -27,7 +28,7 @@ export class PublishComponent extends Component {
 
     handleSubmit() {
         //let data="title="+this.title.value+"&content="+this.content.value+"&upload="+this.file.value
-        let _alert = this.props.actions._alert,
+        let _alert = this.props.alertActions._alert,
             titleValue = this.title.value.trim(),
             contentValue = this.edit.value.trim()
         if (titleValue.length < 5) {
@@ -49,7 +50,7 @@ export class PublishComponent extends Component {
             }
         }
         let data = new FormData(this.form);
-        this.props.actions.publishSubmit(data)
+        this.props.publishActions.publishSubmit(data)
     }
 
     editor() {
@@ -102,7 +103,8 @@ const mapStateToProps = (state)=> {
 }
 const mapDispatchToProps = (dispatch)=> {
     return {
-        actions: bindActionCreators(actions, dispatch),
+        publishActions: bindActionCreators(publishActions, dispatch),
+        alertActions: bindActionCreators(alertActions, dispatch)
     }
 }
 const Publish = connect(

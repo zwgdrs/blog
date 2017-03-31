@@ -58,25 +58,25 @@ const tips=(state={messgage:""},action)=>{
 ------------------
 */
 
-const textinitState={"type":"text","title":"单行文字","default":"单行文字默认值","tis":"单行文字提示","required":false,"readonly":true,"minValue":"","maxValue":""}
-const textareainitState={"type":"textarea","title":"多行文字","default":"多行文字默认值","tis":"多行文字提示","required":false,"readonly":true,"minValue":"","maxValue":""}
-const radioinitState={"type":"radio","title":"单项选择","choices":[{"checked":false,"value":""},{"checked":true,"value":""},{"checked":false,"value":""}],"required":false,"minValue":"","maxValue":"","line_row":"1"};
-const checkboxinitState={"type":"checkbox","title":"多项选择","choices":[{"checked":false,"value":""},{"checked":true,"value":""},{"checked":false,"value":""}],"required":false,"minValue":"","maxValue":"","line_row":"1"};
-const selectinitState={"type":"select","title":"下拉框","choices":[{"checked":false,"value":""},{"checked":true,"value":""},{"checked":false,"value":""}],"required":false,"minValue":"","maxValue":"","line_row":"1"};
-const numberinitState={"type":"number","title":"数字","default":"","tis":"","required":false,"readonly":true,"minValue":"","maxValue":""}
-const iphoneinitState={"type":"iphone","title":"电话","default":"","tis":"分隔请用-或空格，国际电话请加+","required":false,}
-const emailinitState={"type":"email","title":"邮箱","default":"","tis":"","required":false,"readonly":true,"minValue":"","maxValue":""}
-const positioninitState={"type":"position","title":"地理位置","default":"","tis":"","required":false,"readonly":true,"minValue":"","maxValue":""}
-const timeinitState={"type":"time","title":"时间","default":"","tis":"","required":false,"readonly":true,"minValue":"","maxValue":""}
-const wxinitState={"type":"wx","title":"微信扫码","default":"","tis":"","required":false,"readonly":true,"minValue":"","maxValue":""}
-const mobileinitState={"type":"mobile","title":"手机","default":"","tis":"","required":false}
-const psinitState={"type":"ps","title":"说明","default":"","tis":"","required":false}
-const fenjieinitState={"type":"fenjie","title":"分节"}
-const picinitState={"type":"pic","title":"图片","required":false}
-const fujianinitState={"type":"fujian","title":"附件","required":false}
-const jssinitState={"type":"jss","title":"计算式","tis":"计算式填写 [数字] 类型字段的标题加运算符，运算符支持+-*/()。例：单价*数量-折扣","readonly":true,"fixed":"","default":""}
-const pingfeninitState={"type":"pingfen","title":"评分","required":false,"manfen":5,"curren":"xingxing"}
-const cityinitState={"type":"city","title":"省市区","required":false}
+// const textinitState={"type":"text","title":"单行文字","default":"单行文字默认值","tis":"单行文字提示","required":false,"readonly":true,"minValue":"","maxValue":""}
+// const textareainitState={"type":"textarea","title":"多行文字","default":"多行文字默认值","tis":"多行文字提示","required":false,"readonly":true,"minValue":"","maxValue":""}
+// const radioinitState={"type":"radio","title":"单项选择","choices":[{"checked":false,"value":""},{"checked":true,"value":""},{"checked":false,"value":""}],"required":false,"minValue":"","maxValue":"","line_row":"1"};
+// const checkboxinitState={"type":"checkbox","title":"多项选择","choices":[{"checked":false,"value":""},{"checked":true,"value":""},{"checked":false,"value":""}],"required":false,"minValue":"","maxValue":"","line_row":"1"};
+// const selectinitState={"type":"select","title":"下拉框","choices":[{"checked":false,"value":""},{"checked":true,"value":""},{"checked":false,"value":""}],"required":false,"minValue":"","maxValue":"","line_row":"1"};
+// const numberinitState={"type":"number","title":"数字","default":"","tis":"","required":false,"readonly":true,"minValue":"","maxValue":""}
+// const iphoneinitState={"type":"iphone","title":"电话","default":"","tis":"分隔请用-或空格，国际电话请加+","required":false,}
+// const emailinitState={"type":"email","title":"邮箱","default":"","tis":"","required":false,"readonly":true,"minValue":"","maxValue":""}
+// const positioninitState={"type":"position","title":"地理位置","default":"","tis":"","required":false,"readonly":true,"minValue":"","maxValue":""}
+// const timeinitState={"type":"time","title":"时间","default":"","tis":"","required":false,"readonly":true,"minValue":"","maxValue":""}
+// const wxinitState={"type":"wx","title":"微信扫码","default":"","tis":"","required":false,"readonly":true,"minValue":"","maxValue":""}
+// const mobileinitState={"type":"mobile","title":"手机","default":"","tis":"","required":false}
+// const psinitState={"type":"ps","title":"说明","default":"","tis":"","required":false}
+// const fenjieinitState={"type":"fenjie","title":"分节"}
+// const picinitState={"type":"pic","title":"图片","required":false}
+// const fujianinitState={"type":"fujian","title":"附件","required":false}
+// const jssinitState={"type":"jss","title":"计算式","tis":"计算式填写 [数字] 类型字段的标题加运算符，运算符支持+-*/()。例：单价*数量-折扣","readonly":true,"fixed":"","default":""}
+// const pingfeninitState={"type":"pingfen","title":"评分","required":false,"manfen":5,"curren":"xingxing"}
+// const cityinitState={"type":"city","title":"省市区","required":false}
 
 const Clone=(obj)=>{//深拷贝
     var objClone;
@@ -99,120 +99,120 @@ const Clone=(obj)=>{//深拷贝
 } 
 const addState=(state=[],action)=>{
     switch(action.type){
-        case "TEXT":
-            var newstate=state.map(el=>Object.assign({},el,{active:false}))
-            return [
-                 ...newstate,
-                 Object.assign({},textinitState,{id:state.length},{active:true})
-            ]
-        case "TEXTAREA":
-            var newstate=state.map(el=>Object.assign({},el,{active:false}))
-            return [
-                 ...newstate,
-                 Object.assign({},textareainitState,{id:state.length},{active:true})
-            ]
-        case "RADIO":
-            var newstate=state.map(el=>Object.assign({},el,{active:false}))
-            return [
-                 ...newstate,
-                 Object.assign({},radioinitState,{id:state.length},{active:true})
-            ]
-        case "SELECT":
-            var newstate=state.map(el=>Object.assign({},el,{active:false}))
-            return [
-                 ...newstate,
-                 Object.assign({},selectinitState,{id:state.length},{active:true})
-            ]
-        case "CHECKBOX":
-            var newstate=state.map(el=>Object.assign({},el,{active:false}))
-            return [
-                 ...newstate,
-                 Object.assign({},checkboxinitState,{id:state.length},{active:true})
-            ]
-        case "NUMBER":
-            var newstate=state.map(el=>Object.assign({},el,{active:false}))
-            return [
-                 ...newstate,
-                 Object.assign({},numberinitState,{id:state.length},{active:true})
-            ]
-        case "IPHONE":
-            var newstate=state.map(el=>Object.assign({},el,{active:false}))
-            return [
-                 ...newstate,
-                 Object.assign({},iphoneinitState,{id:state.length},{active:true})
-            ]
-        case "EMAIL":
-            var newstate=state.map(el=>Object.assign({},el,{active:false}))
-            return [
-                 ...newstate,
-                 Object.assign({},emailinitState,{id:state.length},{active:true})
-            ]
-        case "POSITION":
-            var newstate=state.map(el=>Object.assign({},el,{active:false}))
-            return [
-                 ...newstate,
-                 Object.assign({},positioninitState,{id:state.length},{active:true})
-            ]
-        case "TIME":
-            var newstate=state.map(el=>Object.assign({},el,{active:false}))
-            return [
-                 ...newstate,
-                 Object.assign({},timeinitState,{id:state.length},{active:true})
-            ]
-        case "WX":
-            var newstate=state.map(el=>Object.assign({},el,{active:false}))
-            return [
-                 ...newstate,
-                 Object.assign({},wxinitState,{id:state.length},{active:true})
-            ]
-        case "MOBILE":
-            var newstate=state.map(el=>Object.assign({},el,{active:false}))
-            return [
-                 ...newstate,
-                 Object.assign({},mobileinitState,{id:state.length},{active:true})
-            ]
-        case "PS":
-            var newstate=state.map(el=>Object.assign({},el,{active:false}))
-            return [
-                 ...newstate,
-                 Object.assign({},psinitState,{id:state.length},{active:true})
-            ]
-        case "FENJIE":
-            var newstate=state.map(el=>Object.assign({},el,{active:false}))
-            return [
-                 ...newstate,
-                 Object.assign({},fenjieinitState,{id:state.length},{active:true})
-            ]
-        case "PIC":
-            var newstate=state.map(el=>Object.assign({},el,{active:false}))
-            return [
-                 ...newstate,
-                 Object.assign({},picinitState,{id:state.length},{active:true})
-            ]
-        case "FUJIAN":
-            var newstate=state.map(el=>Object.assign({},el,{active:false}))
-            return [
-                 ...newstate,
-                 Object.assign({},fujianinitState,{id:state.length},{active:true})
-            ]
-        case "JSS":
-            var newstate=state.map(el=>Object.assign({},el,{active:false}))
-            return [
-                 ...newstate,
-                 Object.assign({},jssinitState,{id:state.length},{active:true})
-            ]
-        case "PINGFEN":
-            var newstate=state.map(el=>Object.assign({},el,{active:false}))
-            return [
-                 ...newstate,
-                 Object.assign({},pingfeninitState,{id:state.length},{active:true})
-            ]
-        case "CITY":
-            var newstate=state.map(el=>Object.assign({},el,{active:false}))
-            return [
-                 ...newstate,
-                 Object.assign({},cityinitState,{id:state.length},{active:true})
-            ]
+        // case "TEXT":
+        //     var newstate=state.map(el=>Object.assign({},el,{active:false}))
+        //     return [
+        //          ...newstate,
+        //          Object.assign({},textinitState,{id:state.length},{active:true})
+        //     ]
+        // case "TEXTAREA":
+        //     var newstate=state.map(el=>Object.assign({},el,{active:false}))
+        //     return [
+        //          ...newstate,
+        //          Object.assign({},textareainitState,{id:state.length},{active:true})
+        //     ]
+        // case "RADIO":
+        //     var newstate=state.map(el=>Object.assign({},el,{active:false}))
+        //     return [
+        //          ...newstate,
+        //          Object.assign({},radioinitState,{id:state.length},{active:true})
+        //     ]
+        // case "SELECT":
+        //     var newstate=state.map(el=>Object.assign({},el,{active:false}))
+        //     return [
+        //          ...newstate,
+        //          Object.assign({},selectinitState,{id:state.length},{active:true})
+        //     ]
+        // case "CHECKBOX":
+        //     var newstate=state.map(el=>Object.assign({},el,{active:false}))
+        //     return [
+        //          ...newstate,
+        //          Object.assign({},checkboxinitState,{id:state.length},{active:true})
+        //     ]
+        // case "NUMBER":
+        //     var newstate=state.map(el=>Object.assign({},el,{active:false}))
+        //     return [
+        //          ...newstate,
+        //          Object.assign({},numberinitState,{id:state.length},{active:true})
+        //     ]
+        // case "IPHONE":
+        //     var newstate=state.map(el=>Object.assign({},el,{active:false}))
+        //     return [
+        //          ...newstate,
+        //          Object.assign({},iphoneinitState,{id:state.length},{active:true})
+        //     ]
+        // case "EMAIL":
+        //     var newstate=state.map(el=>Object.assign({},el,{active:false}))
+        //     return [
+        //          ...newstate,
+        //          Object.assign({},emailinitState,{id:state.length},{active:true})
+        //     ]
+        // case "POSITION":
+        //     var newstate=state.map(el=>Object.assign({},el,{active:false}))
+        //     return [
+        //          ...newstate,
+        //          Object.assign({},positioninitState,{id:state.length},{active:true})
+        //     ]
+        // case "TIME":
+        //     var newstate=state.map(el=>Object.assign({},el,{active:false}))
+        //     return [
+        //          ...newstate,
+        //          Object.assign({},timeinitState,{id:state.length},{active:true})
+        //     ]
+        // case "WX":
+        //     var newstate=state.map(el=>Object.assign({},el,{active:false}))
+        //     return [
+        //          ...newstate,
+        //          Object.assign({},wxinitState,{id:state.length},{active:true})
+        //     ]
+        // case "MOBILE":
+        //     var newstate=state.map(el=>Object.assign({},el,{active:false}))
+        //     return [
+        //          ...newstate,
+        //          Object.assign({},mobileinitState,{id:state.length},{active:true})
+        //     ]
+        // case "PS":
+        //     var newstate=state.map(el=>Object.assign({},el,{active:false}))
+        //     return [
+        //          ...newstate,
+        //          Object.assign({},psinitState,{id:state.length},{active:true})
+        //     ]
+        // case "FENJIE":
+        //     var newstate=state.map(el=>Object.assign({},el,{active:false}))
+        //     return [
+        //          ...newstate,
+        //          Object.assign({},fenjieinitState,{id:state.length},{active:true})
+        //     ]
+        // case "PIC":
+        //     var newstate=state.map(el=>Object.assign({},el,{active:false}))
+        //     return [
+        //          ...newstate,
+        //          Object.assign({},picinitState,{id:state.length},{active:true})
+        //     ]
+        // case "FUJIAN":
+        //     var newstate=state.map(el=>Object.assign({},el,{active:false}))
+        //     return [
+        //          ...newstate,
+        //          Object.assign({},fujianinitState,{id:state.length},{active:true})
+        //     ]
+        // case "JSS":
+        //     var newstate=state.map(el=>Object.assign({},el,{active:false}))
+        //     return [
+        //          ...newstate,
+        //          Object.assign({},jssinitState,{id:state.length},{active:true})
+        //     ]
+        // case "PINGFEN":
+        //     var newstate=state.map(el=>Object.assign({},el,{active:false}))
+        //     return [
+        //          ...newstate,
+        //          Object.assign({},pingfeninitState,{id:state.length},{active:true})
+        //     ]
+        // case "CITY":
+        //     var newstate=state.map(el=>Object.assign({},el,{active:false}))
+        //     return [
+        //          ...newstate,
+        //          Object.assign({},cityinitState,{id:state.length},{active:true})
+        //     ]
         case "TITLE":
             return state.map(el=>
                 el.id===action.id?Object.assign({},el,{title:action.title}):el

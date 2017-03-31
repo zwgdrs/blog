@@ -47,37 +47,6 @@ gulp.task('assets', ['clean'], function() {
   })).pipe(gulp.dest('dist'));
 });
 
-// gulp.task('f2e', ['assets'], function(cb) {
-//   var f2e;
-//   f2e = profile.f2e;
-//   //scp -r dist/* lxcai@f2e-vps:/home/appops/html/lxcai/uncharted
-//   exec("scp -r dist/* " + f2e.name + "@" + f2e.host + ":/home/appops/html/" + f2e.name + "/" + projectName + "/", function(err) {
-//     if (err) {
-//       throw new gutil.PluginError("clean", err);
-//     }
-//     gutil.log('Done!');
-//     return cb();
-//   });
-// });
-//
-//
-// gulp.task('test', ['f2e'], function(cb) {
-//   var apr, assetsNames, f2e;
-//   assetsNames = webpackStats.assetsByChunkName;
-//   f2e = profile.f2e;
-//   apr = "http://f2e.developer.163.com/" + f2e.name + "/" + projectName + "/";
-//   return gulp.src('src/*.html').pipe(htmlreplace({
-//     'css': apr + 'css/app.css',
-//     'bundle': apr + 'js/bundle.js',
-//     'vendor': apr + 'js/vendor.js'
-//   })).pipe(fileInsert({
-//     "/*webpackBootstrap*/": path.join('dist', assetsNames.webpackBootstrap[0])
-//   })).pipe(htmlmin({
-//     collapseWhitespace: true,
-//     removeComments: true
-//   })).pipe(gulp.dest('dist'));
-// });
-
 gulp.task('tcm', ['assets'], function(cb) {
   var apr, assetsNames, tcm;
   assetsNames = webpackStats.assetsByChunkName;
@@ -98,7 +67,6 @@ gulp.task('tcm', ['assets'], function(cb) {
 gulp.task('test', ['tcm'], function(cb) {
   var tcm;
   tcm = profile.tcm;
-  //scp -r dist/* lxcai@f2e-vps:/home/appops/html/lxcai/uncharted
   exec("scp -r dist/* " + tcm.name + "@" + tcm.host + ":/home/appops/app/adminHtml/" + projectName + "/", function(err) {
     if (err) {
       throw new gutil.PluginError("clean", err);
@@ -112,12 +80,14 @@ gulp.task('ftp', ['assets'], function(cb) {
   var conn = createConnection(profile.ftp.img);
   return gulp.src(['dist/**/*'])
     .pipe(gulpIgnore.exclude(['**/*.map', '**/{img,img/**}', '**/webpackBootstrap.*.js', '*.html']))
-    .pipe(conn.dest('/utf8/apps/' + projectName + '/'))
+    .pipe(conn.dest('/utf8/gdrs/' + projectName + '/'))
 })
 
 gulp.task('deploy', ['ftp'], function(cb) {
+  console.log(1)
   var apr, assetsNames, cssFile, jsFile;
   assetsNames = webpackStats.assetsByChunkName;
+    console.log(2)
   assetsNames.app.forEach(function(item) {
     if (item.match(/css$/)) {
       cssFile = item;
@@ -126,7 +96,8 @@ gulp.task('deploy', ['ftp'], function(cb) {
       jsFile = item;
     }
   })
-  apr = "http://img6.cache.netease.com/utf8/apps/" + projectName + "/";
+    console.log(3)
+  apr = "http://img6.cache.netease.com/utf8/gdrs/" + projectName + "/";
   return gulp.src('src/*.html').pipe(htmlreplace({
     'css': apr + cssFile,
     'bundle': apr + jsFile,

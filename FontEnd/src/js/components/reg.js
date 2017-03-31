@@ -1,7 +1,7 @@
 import React, {Component} from "react"
 import {connect} from 'react-redux'
 import {bindActionCreators} from 'redux'
-import * as actions from '../actions/index'
+import * as loginActions from '../actions/login'
 import SystemModal from './systemModal'
 export class Reg extends Component {
     constructor(props) {
@@ -12,7 +12,7 @@ export class Reg extends Component {
     }
 
     submitReg(self) {
-        let _alert = self.props.actions._alert
+        let _alert = self.props.loginActions._alert
         if (self.userName.value.length < 2) {
             _alert("用户名长度为2-10位数")
             return
@@ -34,7 +34,7 @@ export class Reg extends Component {
             return
         }
         let data = "userName=" + self.userName.value + "&password=" + self.password.value;
-        self.props.actions.loginSubmit("regSubmit", data)
+        self.props.loginActions.loginSubmit("regSubmit", data)
     }
 
     render() {
@@ -71,7 +71,7 @@ const mapStateToProps = (state)=> {
 }
 const mapDispatchToProps = (dispatch)=> {
     return {
-        actions: bindActionCreators(actions, dispatch),
+        loginActions: bindActionCreators(loginActions, dispatch),
     }
 }
 export default connect(

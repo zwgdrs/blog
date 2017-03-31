@@ -12,7 +12,6 @@ import CSSModules from 'react-css-modules'
 
 export class ArticleList extends Component {
     componentWillMount() {
-        console.log("componentWillMount,插入DOM前", this.props)
         if (this.props.type == "index") {
             this.props.ajaxData(this.props.type, this.props.query.page)
         } else if (this.props.type == "search") {
@@ -25,12 +24,7 @@ export class ArticleList extends Component {
         }
     }
 
-    componentDidMount() {
-        console.log("componentDidMount,插入DOM后", this.props)
-    }
-
     componentWillReceiveProps(nextProps) {
-        console.log("componentWillReceiveProps,收到新的参数", this.props, nextProps)
         if (nextProps.type == "index") {
             if (this.props.query.page != nextProps.query.page) {
                 this.props.ajaxData(nextProps.type, nextProps.query.page)
@@ -58,7 +52,6 @@ export class ArticleList extends Component {
                 articleTmp.push(< ArticleItem key={ i } data={ data[i] }/>)
             }
         }
-        console.log(articleTmp)
         return (
             <div>
                 <ul styleName="article-list"> { articleTmp.length ? articleTmp : "暂无搜索结果" } </ul>

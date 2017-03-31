@@ -1,6 +1,7 @@
 import React, {Component} from "react"
 import {render} from 'react-dom'
 import {Link, IndexLink} from 'react-router'
+import * as alertActions from '../actions/alert'
 import {hashHistory} from 'react-router'
 import CSSModules from 'react-css-modules';
 import styles from '../../css/pageLi.less'
@@ -10,7 +11,7 @@ import styles from '../../css/pageLi.less'
 export default class PageLi extends Component {
     constructor(props) {
         super(props)
-        this._alert = this.props.actions._alert
+        this._alert = alertActions._alert
         this.validatePage = this.validatePage.bind(this)
     }
 
@@ -98,14 +99,14 @@ export default class PageLi extends Component {
                 for (let i = 1; i <= len; i++) {
                     pageTmp.push(
                         < li key={ i }>
-                            <Link className="black-btn" to={this.params(i) } activestyleName="active">{ i }</Link>
+                            <Link className="black-btn" to={this.params(i)}>{i}</Link>
                         </li >
                     )
                 }
             } else {
                 for (let i = 1; i <= maxPage; i++) {
                     pageTmp.push(< li key={ i }>
-                        <Link className="black-btn" to={this.params(i) } activestyleName="active">{ i }</Link></li >)
+                        <Link className="black-btn" to={this.params(i)}>{i}</Link></li >)
                 }
             }
         } else if (pageCurrent > len) {
@@ -147,3 +148,4 @@ export default class PageLi extends Component {
         )
     }
 }
+

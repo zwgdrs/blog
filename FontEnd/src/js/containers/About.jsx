@@ -3,6 +3,8 @@ import {render} from 'react-dom'
 import {connect} from 'react-redux'
 import {bindActionCreators} from 'redux'
 import * as actions from '../actions/index'
+import * as ajaxActions from '../actions/ajax'
+import * as aboutActions from '../actions/about'
 
 class AboutComponent extends Component {
     constructor(props) {
@@ -11,18 +13,13 @@ class AboutComponent extends Component {
     }
 
     componentWillMount() {
-        console.log("About==>componentWillMount", this.props)
-        const {dispatch}=this.props
-        this.props.actions.ajaxData("about")
+        this.props.ajaxActions.ajaxData("about")
     }
 
-    componentDidUpdate() {
-        console.log("About==>componentDidUpdate", this.props)
-    }
 
     aboutSubmit() {
         console.log(this.about.innerHTML)
-        this.props.actions.SaveAbout(this.about.innerHTML)
+        this.props.aboutActions.saveAbout(this.about.innerHTML)
     }
 
     render() {
@@ -42,7 +39,8 @@ const mapStateToProps = (state)=> {
 }
 const mapDispatchToProps = (dispatch)=> {
     return {
-        actions: bindActionCreators(actions, dispatch),
+        ajaxActions: bindActionCreators(ajaxActions, dispatch),
+        aboutActions: bindActionCreators(aboutActions, dispatch),
     }
 }
 const About = connect(

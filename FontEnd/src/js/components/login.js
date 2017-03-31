@@ -1,8 +1,8 @@
 import React, {Component} from "react"
-import {render} from 'react-dom'
 import {connect} from 'react-redux'
 import {bindActionCreators} from 'redux'
-import * as actions from '../actions/index'
+import * as alertActions from '../actions/alert'
+import * as loginActions from '../actions/login'
 import SystemModal from './systemModal.jsx'
 
 export class Login extends Component {
@@ -13,7 +13,7 @@ export class Login extends Component {
     }
 
     submitLogin(self) {
-        let _alert = self.props.actions._alert
+        let _alert = self.props.alertActions._alert
         if (self.userName.value.length < 2) {
             _alert("用户名格式不正确")
             return
@@ -23,7 +23,7 @@ export class Login extends Component {
             return
         }
         let data = "userName=" + self.userName.value + "&password=" + self.password.value;
-        self.props.actions.loginSubmit("loginSubmit", data)
+        self.props.loginActions.loginSubmit("loginSubmit", data)
     }
 
     render() {
@@ -54,7 +54,8 @@ const mapStateToProps = (state)=> {
 }
 const mapDispatchToProps = (dispatch)=> {
     return {
-        actions: bindActionCreators(actions, dispatch),
+        loginActions: bindActionCreators(loginActions, dispatch),
+        alertActions: bindActionCreators(alertActions, dispatch),
     }
 }
 export default connect(

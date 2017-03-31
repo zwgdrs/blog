@@ -1,6 +1,4 @@
 import React, {Component} from "react"
-import {render} from 'react-dom'
-import {bindActionCreators} from 'redux'
 import styles from '../../css/footer.less'
 import CSSModules from 'react-css-modules'
 @CSSModules(styles, {

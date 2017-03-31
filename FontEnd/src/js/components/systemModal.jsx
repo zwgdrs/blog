@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 import {render} from 'react-dom'
 import {connect} from 'react-redux'
-import * as actions from '../actions/index'
+import * as modalActions from '../actions/modal'
 import {bindActionCreators} from 'redux'
 import {Router, Route, IndexRoute, Link, IndexLink, browserHistory, hashHistory} from 'react-router'
 import styles from '../../css/systemModal.less'
@@ -19,7 +19,7 @@ class SystemModel extends Component {
         const { data } = this.props
         return (
             <div styleName="container">
-                <i styleName="close" onClick={()=>{this.props.actions.mobBoxData("mobBoxClose")}}>x</i>
+                <i styleName="close" onClick={()=>{this.props.modalActions.mobBoxData("mobBoxClose")}}>x</i>
                 <div styleName="title">
                     <div styleName="top">{data.title.text}</div>
                     <div styleName="bottom">{data.title.desc}</div>
@@ -38,7 +38,7 @@ const mapStateToProps = (state)=> {
 }
 const mapDispatchToProps = (dispatch)=> {
     return {
-        actions: bindActionCreators(actions, dispatch),
+        modalActions: bindActionCreators(modalActions, dispatch),
     }
 }
 export default connect(

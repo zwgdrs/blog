@@ -9,6 +9,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    min-width: 700px;
     min-height: 100%;
     //padding-right: 320px;
     transition: all .2s ease-out 0s;
@@ -74,6 +75,19 @@
 
   .icon-go-left {
     right: 350px;
+  }
+
+}
+
+@media screen and (max-width: 1020px) {
+  .page {
+    .main-go-left {
+      margin-right: 0;
+    }
+
+    .icon-go-left {
+      right: 30px;
+    }
   }
 
 }

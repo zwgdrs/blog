@@ -1,9 +1,8 @@
-import React, { Component } from "react"
-import { render } from 'react-dom'
-import { connect } from 'react-redux'
-import { bindActionCreators } from 'redux'
-import * as actions from '../actions/index'
-import { ArticleList } from './ArticleList'
+import React, {Component} from "react"
+import {connect} from 'react-redux'
+import {bindActionCreators} from 'redux'
+import * as ajaxActions from '../actions/ajax'
+import {ArticleList} from './ArticleList'
 import PageLi from './PageLi'
 import styles from '../../css/index.less'
 import CSSModules from 'react-css-modules'
@@ -14,23 +13,25 @@ import CSSModules from 'react-css-modules'
 export class Index extends Component {
     render() {
         var type = location.hash.match(/category=\d+/) ? 'category' : 'index'
-        var categoryType = type == 'category'?location.hash.match(/category=\d+/).join('').match(/\d/)[0]:''
+        var categoryType = type == 'category' ? location.hash.match(/category=\d+/).join('').match(/\d/)[0] : ''
         let data = this.props.index;
         return (
-          <div styleName="main" >
-            <ArticleList articleList = { data.data } ajaxData={ this.props.actions.ajaxData } type={ type } query={ this.props.query } />
-              <PageLi pageList={ data.page } ajaxData = { this.props.actions.ajaxData } type={ type } query={ this.props.query } actions={ this.props.actions } categoryType={ categoryType }/>
-          </div>
+            <div styleName="main">
+                <ArticleList articleList={data.data} ajaxData={this.props.ajaxActions.ajaxData} type={type}
+                             query={this.props.query}/>
+                <PageLi pageList={data.page} ajaxData={this.props.ajaxActions.ajaxData} type={type}
+                        query={this.props.query} categoryType={categoryType}/>
+            </div>
         )
     }
 }
 
 const mapStateToProps = (state) => {
-    return { index: state.container, nav: state.nav }
+    return {index: state.container, nav: state.nav}
 }
 const mapDispatchToProps = (dispatch) => {
     return {
-        actions: bindActionCreators(actions, dispatch),
+        ajaxActions: bindActionCreators(ajaxActions, dispatch)
     }
 }
 export default connect(

@@ -1,8 +1,7 @@
 import React, {Component} from "react"
-import {render} from 'react-dom'
 import {connect} from 'react-redux'
 import {bindActionCreators} from 'redux'
-import * as actions from '../actions/index'
+import * as modalActions from '../actions/modal'
 import styles from '../../css/notLoginTop.less'
 import CSSModules from 'react-css-modules'
 @CSSModules(styles, {
@@ -12,8 +11,8 @@ class NoLoginTop extends Component {
     render() {
         return (
             <div styleName="not-login">
-                <div className="white-btn" onClick={() => this.props.actions.mobBoxData("loginShow") }>登录</div>
-                <div className="white-btn" onClick={() => this.props.actions.mobBoxData("regShow") }>注册</div>
+                <div className="white-btn" onClick={() => this.props.modalActions.mobBoxData("loginShow") }>登录</div>
+                <div className="white-btn" onClick={() => this.props.modalActions.mobBoxData("regShow") }>注册</div>
             </div>
         )
     }
@@ -23,7 +22,7 @@ const mapStateToProps = (state)=> {
 }
 const mapDispatchToProps = (dispatch)=> {
     return {
-        actions: bindActionCreators(actions, dispatch),
+        modalActions: bindActionCreators(modalActions, dispatch),
     }
 }
 export default connect(

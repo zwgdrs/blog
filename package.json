@@ -1,0 +1,21 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "cd BackEnd && npm run pm2node && cd ../FontEnd && npm start",
+    "mongod": "cd /Users/apple/mongodb/bin/ && sudo ./mongod"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zwgdrs/blog.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zwgdrs/blog/issues"
+  },
+  "homepage": "https://github.com/zwgdrs/blog#readme"
+}

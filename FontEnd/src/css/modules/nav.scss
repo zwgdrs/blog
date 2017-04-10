@@ -22,34 +22,39 @@
     .search-form {
       display: flex;
       align-items: center;
+      justify-content: space-between;
       width: 350px;
       height: 30px;
-      padding: 0 5px;
+      //padding: 0 5px;
+      border-radius: 2px;
       color: white;
       background: white;
 
       > input {
         width: 280px;
         height: 30px;
+        padding-left: 10px;
         color: black;
         border: 0;
         margin-right: 20px;
       }
 
       .btn {
-        padding: 2px 5px;
-        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 100%;
         border-radius: 2px;
         cursor: pointer;
-        background-color: #24292e;
-        border: 1px solid white;
-        transition: all .2s linear 0s;
+        translate: all;
+        background: black;
+        > i {
+          font-size: 18px;
+        }
 
-        &:hover {
-          color: black;
-          border-radius: 2px;
-          background-color: white;
-          border: 1px solid #24292e;
+        :hover {
+
         }
       }
     }

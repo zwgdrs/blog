@@ -1,14 +1,14 @@
 import React, {Component} from 'react'
-import {render} from 'react-dom'
-import {Router, Route, IndexRoute, Link, IndexLink, browserHistory, hashHistory} from 'react-router'
+import {IndexLink} from 'react-router'
 import Slide from './../components/Slide'
 import Index from '../components/index'
 import Footer from '../components/Footer.js'
 import MobBox from './../components/MobBox'
 import Nav from '../components/nav'
 import TipsBox from './../components/tipsBox'
-import styles from '../../css/App.less'
-import '../../css/font-awesome/less/font-awesome.less'
+// import {scrollTop} from '../utils/util'
+import styles from '../../css/modules/App.scss'
+// import '../../css/font-awesome/less/font-awesome.'
 import CSSModules from 'react-css-modules'
 @CSSModules(styles, {
     allowMultiple: true
@@ -20,8 +20,13 @@ export default class App extends Component {
             slideBar: false
         }
         this.navigatorInfo
+        this.backToTop = {
+            toTopTimer: null
+        }
+        this.speed = 10
         this.scrollTop = this.scrollTop.bind(this)
         this.onSlideShow = this.onSlideShow.bind(this)
+        this.onScrollTop = this.onScrollTop.bind(this)
     }
 
     navigatorInfo = [
@@ -59,7 +64,8 @@ export default class App extends Component {
     }
 
     scrollTop() {
-        window.scrollTo(0, 0)
+        this.onScrollTop(document)
+        // window.scrollTo(0, 0)
     }
 
     onSlideShow() {
@@ -67,6 +73,20 @@ export default class App extends Component {
             slideBar: !this.state.slideBar
         })
 
+    }
+
+
+    onScrollTop() {
+        clearInterval(this.backToTop.toTopTimer);
+        let scrollT = document.body.scrollTop || document.documentElement.scrollTop;
+        this.speed = this.speed * 2;
+        if (scrollT == 0 || scrollT < 0) {
+            clearInterval(this.backToTop.toTopTimer);
+            this.speed = 10;
+        } else {
+            scrollBy(0, -this.speed);
+            this.backToTop.toTopTimer = setInterval(this.onScrollTop, 30);
+        }
     }
 
     render() {
@@ -99,8 +119,8 @@ export default class App extends Component {
             ]
         }
         return (
-            <div styleName="page" ref={(ref) => {this.page = ref}}>
-                {this.state.slideBar && <Slide data={slideInfo} />}
+            <div styleName="page" ref={(ref) => this.page = ref}>
+                {this.state.slideBar && <Slide data={slideInfo}/>}
                 <div styleName={mainStyle}>
                     <Nav />
                     <div styleName="nav-box">
@@ -121,7 +141,9 @@ export default class App extends Component {
                     <MobBox />
                     <TipsBox />
                     <Footer />
-                    <div styleName={floatIconStyle} ref={(ref) => {this.floatIcon = ref}}>
+                    <div styleName={floatIconStyle} ref={(ref) => {
+                        this.floatIcon = ref
+                    }}>
                         <div styleName="item" onClick={this.onSlideShow}>
                             <i className="fa fa-sliders" aria-hidden="true"></i>
                         </div>

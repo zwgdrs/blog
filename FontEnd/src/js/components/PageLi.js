@@ -1,21 +1,22 @@
 import React, {Component} from "react"
 import {render} from 'react-dom'
 import {Link, IndexLink} from 'react-router'
-import * as alertActions from '../actions/alert'
 import {hashHistory} from 'react-router'
 import CSSModules from 'react-css-modules';
-import styles from '../../css/pageLi.less'
+import styles from '../../css/modules/pageLi.scss'
 @CSSModules(styles, {
     allowMultiple: true
 })
 export default class PageLi extends Component {
     constructor(props) {
         super(props)
-        this._alert = alertActions._alert
+        this._alert = this.props.actions._alert
+        // console.log(alertActions)
         this.validatePage = this.validatePage.bind(this)
     }
 
     swtichPage(i, type, len) {
+        console.log(1)
         if (!this.validatePage(i, len, type)) {
             return
         }
@@ -55,6 +56,7 @@ export default class PageLi extends Component {
 
     validatePage(pageNum, pageSum, type) {
         let passValidate = true
+        console.log(...arguments)
         switch (type) {
             case 'jump':
                 if (pageNum <= 0) {
@@ -68,6 +70,7 @@ export default class PageLi extends Component {
                 break
             case 'next':
                 if (pageNum > pageSum) {
+
                     this._alert("已经是最后一页了")
                     passValidate = false
                 }

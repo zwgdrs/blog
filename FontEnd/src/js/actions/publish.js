@@ -1,6 +1,9 @@
 /*发布作品请求
  @data 发布作品的数据
  */
+import { hashHistory } from 'react-router'
+import { _alertStore } from './alert'
+const requestAPI = "http://localhost:8080/"
 export const publishSubmit = (data) => {
     return (dispatch, getState) => {
         var xmlHttp = new XMLHttpRequest();

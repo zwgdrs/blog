@@ -1,4 +1,4 @@
-//@import './font-awesome/less/font-awesome';
+@import '../main.scss';
 .page {
   position: relative;
   //width: 100%;
@@ -24,6 +24,41 @@
         align-items: center;
         justify-content: space-between;
 
+        &>li:nth-child(1) {
+          i {
+            &:before{
+              @include tip-icon(home-icon)
+            }
+          }
+        }
+        &>li:nth-child(2) {
+          i {
+            &:before{
+              @include tip-icon(pencil-icon)
+            }
+          }
+        }
+        &>li:nth-child(3) {
+          i {
+            &:before{
+              @include tip-icon(tags-icon)
+            }
+          }
+        }
+        &>li:nth-child(4) {
+          i {
+            &:before{
+              @include tip-icon(list-icon)
+            }
+          }
+        }
+        &>li:nth-child(5) {
+          i {
+            &:before{
+              @include tip-icon(flag-icon)
+            }
+          }
+        }
         .link {
           display: flex;
           flex-direction: column;
@@ -35,11 +70,11 @@
             font-size: 15px;
             margin-bottom: 2px;
           }
-
         }
         .link:hover {
           transform: scale(1.1)
         }
+
       }
     }
     .container {
@@ -70,6 +105,22 @@
       color: white;
       cursor: pointer;
       background: black;
+    }
+
+    &>.item:nth-child(1) {
+      i {
+        &:before{
+          @include tip-icon(sliders-icon)
+        }
+      }
+    }
+    
+    &>.item:nth-child(2) {
+      i {
+        &:before{
+          @include tip-icon(arrow-up-icon)
+        }
+      }
     }
   }
 

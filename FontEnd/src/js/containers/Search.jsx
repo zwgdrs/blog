@@ -4,7 +4,7 @@ import { bindActionCreators } from 'redux'
 import * as ajaxActions from '../actions/ajax'
 import { ArticleList } from '../components/ArticleList'
 import PageLi from '../components/PageLi'
-import styles from '../../css/search.less'
+import styles from '../../css/modules/search.scss'
 import CSSModules from 'react-css-modules'
 @CSSModules(styles, {
     allowMultiple: true

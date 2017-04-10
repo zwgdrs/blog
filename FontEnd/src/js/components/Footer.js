@@ -1,5 +1,5 @@
 import React, {Component} from "react"
-import styles from '../../css/footer.less'
+import styles from '../../css/modules/footer.scss'
 import CSSModules from 'react-css-modules'
 @CSSModules(styles, {
     allowMultiple: true

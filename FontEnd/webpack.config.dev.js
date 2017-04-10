@@ -46,10 +46,10 @@ module.exports = {
 				include: path.join(__dirname, 'src/css')
 			},
 			{
-				test: /\.scss$/,
-				loader: ExtractTextPlugin.extract('style', 'css!postcss!sass'),
-				include: path.join(__dirname, 'src/css')
-			},
+                test: /\.scss$/,
+                loader: makeExtract('postcss', 'sass'),
+                // include: path.join(__dirname, 'app/css'),
+            },
 			{
 				test: /\.less$/,
 				loader: ExtractTextPlugin.extract('style', 'css?modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]!postcss!less'),
@@ -68,7 +68,7 @@ module.exports = {
 			{
 				// 专供iconfont方案使用的，后面会带一串时间戳，需要特别匹配到
 				test: /\.(woff|woff2|svg|eot|ttf)\??.*$/,
-				loader: 'file?name=./static/fonts/[name].[ext]',
+				loader: 'file?name=./fonts/[name].[ext]',
 				include: path.join(__dirname, 'src/css/font-awesome/fonts/')
 			}
 		]

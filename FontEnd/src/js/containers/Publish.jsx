@@ -4,7 +4,7 @@ import {bindActionCreators} from 'redux'
 import * as publishActions from '../actions/publish'
 import * as alertActions from '../actions/alert'
 import {markdown} from 'markdown'
-import styles from '../../css/publish.less'
+import styles from '../../css/modules/publish.scss'
 import CSSModules from 'react-css-modules'
 @CSSModules(styles, {
     allowMultiple: true

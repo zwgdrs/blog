@@ -2,9 +2,10 @@ import React, {Component} from "react"
 import {connect} from 'react-redux'
 import {bindActionCreators} from 'redux'
 import * as ajaxActions from '../actions/ajax'
+import * as alertActions from '../actions/alert'
 import {ArticleList} from './ArticleList'
 import PageLi from './PageLi'
-import styles from '../../css/index.less'
+import styles from '../../css/modules/index.scss'
 import CSSModules from 'react-css-modules'
 @CSSModules(styles, {
     allowMultiple: true
@@ -19,7 +20,7 @@ export class Index extends Component {
             <div styleName="main">
                 <ArticleList articleList={data.data} ajaxData={this.props.ajaxActions.ajaxData} type={type}
                              query={this.props.query}/>
-                <PageLi pageList={data.page} ajaxData={this.props.ajaxActions.ajaxData} type={type}
+                <PageLi pageList={data.page} ajaxData={this.props.ajaxActions.ajaxData} type={type} actions={this.props.alertActions}
                         query={this.props.query} categoryType={categoryType}/>
             </div>
         )
@@ -31,7 +32,8 @@ const mapStateToProps = (state) => {
 }
 const mapDispatchToProps = (dispatch) => {
     return {
-        ajaxActions: bindActionCreators(ajaxActions, dispatch)
+        ajaxActions: bindActionCreators(ajaxActions, dispatch),
+        alertActions: bindActionCreators(alertActions, dispatch)
     }
 }
 export default connect(

@@ -8,7 +8,7 @@ import * as alertActions from '../actions/alert'
 import * as ajaxActions from '../actions/ajax'
 import {markdown} from 'markdown'
 import MessageItem from '../components/MessageItem.jsx'
-import styles from '../../css/details.less'
+import styles from '../../css/modules/details.scss'
 import CSSModules from 'react-css-modules'
 @CSSModules(styles, {
     allowMultiple: true

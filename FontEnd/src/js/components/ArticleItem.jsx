@@ -3,7 +3,7 @@ import {render} from 'react-dom'
 import {Link} from 'react-router'
 import {erilizeText} from '../utils/util'
 import {markdown} from 'markdown'
-import styles from '../../css/articleItem.less'
+import styles from '../../css/modules/articleItem.scss'
 import CSSModules from 'react-css-modules'
 @CSSModules(styles, {
     allowMultiple: true

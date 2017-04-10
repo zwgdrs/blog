@@ -4,7 +4,7 @@ import {Link} from 'react-router'
 import {erilizeText} from '../utils/util'
 import {markdown} from 'markdown'
 import ArticleItem from './ArticleItem.jsx'
-import styles from '../../css/articleList.less'
+import styles from '../../css/modules/articleList.scss'
 import CSSModules from 'react-css-modules'
 @CSSModules(styles, {
     allowMultiple: true

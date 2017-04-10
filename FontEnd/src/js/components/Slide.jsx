@@ -1,5 +1,5 @@
 import React, {Component} from "react"
-import styles from '../../css/slide.less'
+import styles from '../../css/modules/slide.scss'
 import CSSModules from 'react-css-modules'
 @CSSModules(styles, {
     allowMultiple: true
@@ -19,7 +19,10 @@ export default class Slide extends Component {
         return (
             <div styleName="main">
                 <div styleName="header">
-                    <img styleName="avatar" src={userInfo.img} alt="头像" />
+                    <div styleName="avatar">
+                        <img styleName="img" src={userInfo.img} alt="头像" />
+                        <input styleName="upload" type="file" name="img" />
+                    </div>
                     <div styleName="name">{userInfo.name}</div>
                     <div styleName="desc">{userInfo.desc}</div>
                 </div>

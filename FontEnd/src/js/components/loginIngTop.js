@@ -2,7 +2,7 @@ import React, {Component} from "react"
 import {connect} from 'react-redux'
 import {bindActionCreators} from 'redux'
 import * as loginSubmit from '../actions/login'
-import styles from '../../css/loginIngTop.less'
+import styles from '../../css/modules/loginIngTop.scss'
 import CSSModules from 'react-css-modules'
 @CSSModules(styles, {
   allowMultiple: true

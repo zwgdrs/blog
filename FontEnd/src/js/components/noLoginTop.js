@@ -2,7 +2,7 @@ import React, {Component} from "react"
 import {connect} from 'react-redux'
 import {bindActionCreators} from 'redux'
 import * as modalActions from '../actions/modal'
-import styles from '../../css/notLoginTop.less'
+import styles from '../../css/modules/notLoginTop.scss'
 import CSSModules from 'react-css-modules'
 @CSSModules(styles, {
     allowMultiple: true

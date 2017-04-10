@@ -17,7 +17,7 @@ import Page404 from './containers/Page404.jsx'
 import Publish from './containers/Publish.jsx'
 import Search from './containers/Search.jsx'
 
-import "../css/style.less"
+import "../css/modules/style.scss"
 
 const store = compose(
   applyMiddleware(thunk),

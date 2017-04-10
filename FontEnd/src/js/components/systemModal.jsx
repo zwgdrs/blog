@@ -4,7 +4,7 @@ import {connect} from 'react-redux'
 import * as modalActions from '../actions/modal'
 import {bindActionCreators} from 'redux'
 import {Router, Route, IndexRoute, Link, IndexLink, browserHistory, hashHistory} from 'react-router'
-import styles from '../../css/systemModal.less'
+import styles from '../../css/modules/SystemModal.scss'
 import CSSModules from 'react-css-modules'
 @CSSModules(styles, {
     allowMultiple: true

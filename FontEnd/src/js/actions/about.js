@@ -5,21 +5,21 @@ const saveAbout = (data) => {
     return (dispatch) => {
         fetch(requestAPI + "about", {
             method: "POST",
-            headers: { "Content-Type": "application/x-www-form-urlencoded" },
+            headers: {"Content-Type": "application/x-www-form-urlencoded"},
             credentials: 'include',
             body: "neirong=" + data
         })
-            .then(function(response) {
+            .then(function (response) {
                 return response.json()
             })
-            .then(function(data) {
+            .then(function (data) {
                 if (data.code === 1000) {
                     return _alertStore(dispatch, data.messgage)
                 } else {
                     return _alertStore(dispatch, data.messgage)
                 }
             })
-            .catch(function(e) {
+            .catch(function (e) {
                 console.error(e);
             });
     }

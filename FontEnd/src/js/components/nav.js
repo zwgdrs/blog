@@ -7,7 +7,7 @@ import * as alertActions from '../actions/alert'
 import NoLoginTop from '../components/noLoginTop'
 import LoginIngTop from '../components/loginIngTop'
 import {hashHistory} from 'react-router'
-import styles from '../../css/nav.less'
+import styles from '../../css/modules/nav.scss'
 import CSSModules from 'react-css-modules'
 @CSSModules(styles, {
     allowMultiple: true
@@ -52,10 +52,7 @@ class Nav extends Component {
                         <input type="text" ref={el => {
                             this.keyword = el
                         }} name="keyword" placeholder="可以搜标题或者内容"/>
-                        <div className="black-btn" onClick={() => {
-                            this.handleSubmit()
-                        }}> 提交
-                        </div>
+                        <div styleName="btn" onClick={this.handleSubmit}><i className="fa fa-search" aria-hidden="true" /></div>
                     </div>
                     {isLogin}
                 </div>

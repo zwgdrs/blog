@@ -27,9 +27,9 @@ const tipsBox = (messgage, type) => {
 const _alert = (messgage) => {
     return (dispatch, getState) => {
         dispatch(tipsBox(messgage, "showTips"))
-        setTimeout(function() {
+        setTimeout(function () {
             dispatch(tipsBox(messgage, "hideTips"))
-        }, 5000)
+        }, 1000)
     }
 }
 
@@ -41,7 +41,7 @@ const _alert = (messgage) => {
  */
 const _alertStore = (dispatch, messgage, fn) => {
     dispatch(tipsBox(messgage, "showTips"))
-    setTimeout(function() {
+    setTimeout(function () {
         dispatch(tipsBox(messgage, "hideTips"))
         fn && fn()
     }, 1000)

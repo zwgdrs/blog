@@ -2,7 +2,7 @@ import React, {Component} from "react"
 import {connect} from 'react-redux'
 import Login from './login'
 import Reg from './reg'
-import styles from '../../css/mobBox.less'
+import styles from '../../css/modules/mobBox.scss'
 import CSSModules from 'react-css-modules'
 @CSSModules(styles, {
   allowMultiple: true

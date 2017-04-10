@@ -371,12 +371,6 @@ const ModalBoxData=(state=[],action)=>{
             return state
     }
 }
-/*const stores = combineReducers({//合成reducers
-  data:addState,
-  ModalBoxIsNone:ModalBoxIsNone,
-  ModalBoxData:ModalBoxData
-})
-export default stores */
 
 
 const stores = combineReducers({//合成reducers

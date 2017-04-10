@@ -1,0 +1,76 @@
+
+$grapefruit-light: #ed5565;
+$grapefruit: #da4453;
+$bittersweet-light: #fc6e51;
+$bittersweet: #e9573f;
+$sunflower-light: #ffce54;
+$sunflower: #f6bb42;
+$grass-light: #a0d468;
+$grass: #8cc152;
+$mint-light: #48cfad;
+$mint: #37bc9b;
+$aqua-light: #ac92ec;
+$aqua: #967adc;
+$pink-light: #ec87c0;
+$pink: #d770ad;
+$white: #fff;
+$gray-light: #f5f7fa;
+$gray-light2: #ECECEC;
+$gray-medium: #ccd1d9;
+$gray-medium2: #aab2bd;
+$gray-dark: #656d78;
+$gray-dark2: #434a54;
+$black-light: #333;
+$black-medium: #2c2e31;
+$black-medium2: #22252A;
+
+$bg-gray: #252d2f;
+$main-color: #2749d2;
+//$main-color: #E10000;
+$hover: $grapefruit-light;
+$back-color: $gray-dark2;
+$primary: #2199e8;
+$secondary: #777;
+$success: #4dd451;
+$warning: #ffae00;
+$alert: #ec5840;
+$alert-color: $main-color;
+
+$foundation-palette: (
+        gray-light2:$gray-light2,
+        primary: $primary,
+        secondary: $secondary,
+        success: $success,
+        warning: $warning,
+        alert: $alert,
+);
+
+$fa-font-path: "//img5.cache.netease.com/utf8/fonts/fonts";
+
+@import "font-awesome/scss/variables";
+
+
+@import "font-awesome/scss/font-awesome";
+
+$body-font-family:"Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
+
+$closebutton-size: 18px;
+//$form-spacing: rem-calc(12);
+$table-stripe: false;
+$global-radius: 2px;
+$button-radius: 2px;
+
+$tip-icon:(
+        home-icon: $fa-var-home,
+        pencil-icon: $fa-var-pencil-square-o,
+        tags-icon: $fa-var-tags,
+        list-icon: $fa-var-list-alt,
+        flag-icon: $fa-var-flag,
+        sliders-icon: $fa-var-sliders,
+        arrow-up-icon: $fa-var-arrow-up
+);
+
+@mixin tip-icon($name){
+  @include fa-icon;
+  content: map_get($tip-icon, $name);
+}

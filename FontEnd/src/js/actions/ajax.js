@@ -14,13 +14,25 @@ const ajaxData = (type, params) => {
         var name = ""
         switch (type) {
             case "index":
-                if (params) { name = "newsList?page=" + params } else { name = "newsList" };
+                if (params) {
+                    name = "newsList?page=" + params
+                } else {
+                    name = "newsList"
+                }
+                ;
                 break;
             case "category":
-                if (params) { name = "newsList?category="+params.category+( params.page?"&page=" + params.page:"" )} else { name = "newsList?category" };
+                if (params) {
+                    name = "newsList?category=" + params.category + ( params.page ? "&page=" + params.page : "" )
+                } else {
+                    name = "newsList?category"
+                }
+                ;
                 break;
             case "search":
-                if (params) { name = "search?keyword="+params.keyword+( params.page?"&page=" + params.page:"" )}
+                if (params) {
+                    name = "search?keyword=" + params.keyword + ( params.page ? "&page=" + params.page : "" )
+                }
                 break;
             case "details":
                 name = "a/" + encodeURI(params.name) + "/" + params.date + "/" + encodeURI(params.title);
@@ -34,13 +46,13 @@ const ajaxData = (type, params) => {
         fetch(requestAPI + name, {
             credentials: 'include'
         })
-            .then(function(response) {
+            .then(function (response) {
                 return response.json();
             })
-            .then(function(data) {
+            .then(function (data) {
                 return dispatch(SwitchTab(type, data))
             })
-            .catch(function(e) {
+            .catch(function (e) {
                 console.error(e);
             });
 

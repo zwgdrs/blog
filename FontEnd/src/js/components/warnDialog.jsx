@@ -2,7 +2,7 @@ import React, {Component} from 'react'
 import {connect} from 'react-redux'
 import * as modalActions from '../actions/modal'
 import {bindActionCreators} from 'redux'
-import styles from '../../css/warnDialog.less'
+import styles from '../../css/modules/warnDialog.scss'
 import CSSModules from 'react-css-modules'
 @CSSModules(styles, {
     allowMultiple: true
@@ -13,24 +13,23 @@ class WarnDialog extends Component {
         super(props)
     }
 
-    componentDidMount () {
-        let animationCount = 0
-        this.container.addEventListener('animationend',(e) => {
-            if (animationCount === 1) {
-                this.props.modalActions.mobBoxData("mobBoxClose")
-            }
-            animationCount ++
-        }, false)
-    }
+    // componentDidMount () {
+    //     let animationCount = 0
+    //     this.container.addEventListener('animationend',(e) => {
+    //         if (animationCount === 1) {
+    //             this.props.modalActions.mobBoxData("mobBoxClose")
+    //         }
+    //         animationCount ++
+    //     }, false)
+    // }
 
     render() {
         const {data} = this.props
         return (
             <div styleName="container" ref={ (e) => this.container = e }>
-                <i styleName="close" onClick={() => {
-                    this.props.modalActions.mobBoxData("mobBoxClose")
-                }}>x</i>
-                <div styleName="content">{data.title.desc}</div>
+                <div styleName="inner">
+                    <div styleName="content">{data.title.desc}</div>
+                </div>
             </div>
         )
     }

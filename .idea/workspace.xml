@@ -5,84 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0a0704da-d66a-4451-834e-a35f4467c25d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/FontEnd/src/css/_loadin.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/FontEnd/src/css/main.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/FontEnd/src/css/modules/warnDialog.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/FontEnd/src/js/reducers/about.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/FontEnd/src/js/reducers/ajax.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/FontEnd/src/js/reducers/alert.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/FontEnd/src/js/reducers/details.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/FontEnd/src/js/reducers/login.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/FontEnd/src/js/reducers/modal.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/FontEnd/src/js/reducers/publish.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/FontEnd/src/js/reducers/search.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FontEnd/src/css/font-awesome/HELP-US-OUT.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FontEnd/src/css/font-awesome/fonts/FontAwesome.otf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FontEnd/src/css/font-awesome/fonts/fontawesome-webfont.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FontEnd/src/css/font-awesome/fonts/fontawesome-webfont.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FontEnd/src/css/font-awesome/fonts/fontawesome-webfont.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FontEnd/src/css/font-awesome/fonts/fontawesome-webfont.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FontEnd/src/css/font-awesome/fonts/fontawesome-webfont.woff2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FontEnd/src/css/font-awesome/less/animated.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FontEnd/src/css/font-awesome/less/bordered-pulled.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FontEnd/src/css/font-awesome/less/core.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FontEnd/src/css/font-awesome/less/fixed-width.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FontEnd/src/css/font-awesome/less/font-awesome.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FontEnd/src/css/font-awesome/less/icons.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FontEnd/src/css/font-awesome/less/larger.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FontEnd/src/css/font-awesome/less/list.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FontEnd/src/css/font-awesome/less/mixins.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FontEnd/src/css/font-awesome/less/path.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FontEnd/src/css/font-awesome/less/rotated-flipped.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FontEnd/src/css/font-awesome/less/screen-reader.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FontEnd/src/css/font-awesome/less/stacked.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FontEnd/src/css/font-awesome/less/variables.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FontEnd/src/css/warnDialog.less" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/FontEnd/src/css/App.less" afterPath="$PROJECT_DIR$/FontEnd/src/css/modules/App.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/FontEnd/src/css/SystemModal.less" afterPath="$PROJECT_DIR$/FontEnd/src/css/modules/SystemModal.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/FontEnd/src/css/articleItem.less" afterPath="$PROJECT_DIR$/FontEnd/src/css/modules/articleItem.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/FontEnd/src/css/articleList.less" afterPath="$PROJECT_DIR$/FontEnd/src/css/modules/articleList.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/FontEnd/src/css/common.less" afterPath="$PROJECT_DIR$/FontEnd/src/css/modules/common.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/FontEnd/src/css/details.less" afterPath="$PROJECT_DIR$/FontEnd/src/css/modules/details.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/FontEnd/src/css/footer.less" afterPath="$PROJECT_DIR$/FontEnd/src/css/modules/footer.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/FontEnd/src/css/index.less" afterPath="$PROJECT_DIR$/FontEnd/src/css/modules/index.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/FontEnd/src/css/loginIngTop.less" afterPath="$PROJECT_DIR$/FontEnd/src/css/modules/loginIngTop.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/FontEnd/src/css/mobBox.less" afterPath="$PROJECT_DIR$/FontEnd/src/css/modules/mobBox.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/FontEnd/src/css/nav.less" afterPath="$PROJECT_DIR$/FontEnd/src/css/modules/nav.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/FontEnd/src/css/notLoginTop.less" afterPath="$PROJECT_DIR$/FontEnd/src/css/modules/notLoginTop.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/FontEnd/src/css/pageLi.less" afterPath="$PROJECT_DIR$/FontEnd/src/css/modules/pageLi.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/FontEnd/src/css/publish.less" afterPath="$PROJECT_DIR$/FontEnd/src/css/modules/publish.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/FontEnd/src/css/search.less" afterPath="$PROJECT_DIR$/FontEnd/src/css/modules/search.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/FontEnd/src/css/slide.less" afterPath="$PROJECT_DIR$/FontEnd/src/css/modules/slide.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/FontEnd/src/css/style.less" afterPath="$PROJECT_DIR$/FontEnd/src/css/modules/style.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/FontEnd/src/css/tipsBox.less" afterPath="$PROJECT_DIR$/FontEnd/src/css/modules/tipsBox.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/FontEnd/src/css/modules/floatModal.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/FontEnd/src/js/components/floatModal.jsx" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BackEnd/access.log" afterPath="$PROJECT_DIR$/BackEnd/access.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FontEnd/index.html" afterPath="$PROJECT_DIR$/FontEnd/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FontEnd/src/js/actions/about.js" afterPath="$PROJECT_DIR$/FontEnd/src/js/actions/about.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FontEnd/src/js/actions/ajax.js" afterPath="$PROJECT_DIR$/FontEnd/src/js/actions/ajax.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FontEnd/src/js/actions/alert.js" afterPath="$PROJECT_DIR$/FontEnd/src/js/actions/alert.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FontEnd/src/js/actions/publish.js" afterPath="$PROJECT_DIR$/FontEnd/src/js/actions/publish.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FontEnd/src/js/components/ArticleItem.jsx" afterPath="$PROJECT_DIR$/FontEnd/src/js/components/ArticleItem.jsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FontEnd/src/js/components/ArticleList.js" afterPath="$PROJECT_DIR$/FontEnd/src/js/components/ArticleList.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FontEnd/src/js/components/Footer.js" afterPath="$PROJECT_DIR$/FontEnd/src/js/components/Footer.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FontEnd/src/css/_loadin.scss" afterPath="$PROJECT_DIR$/FontEnd/src/css/_loadin.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FontEnd/src/css/main.scss" afterPath="$PROJECT_DIR$/FontEnd/src/css/main.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FontEnd/src/css/modules/App.scss" afterPath="$PROJECT_DIR$/FontEnd/src/css/modules/App.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FontEnd/src/css/modules/nav.scss" afterPath="$PROJECT_DIR$/FontEnd/src/css/modules/nav.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FontEnd/src/css/modules/publish.scss" afterPath="$PROJECT_DIR$/FontEnd/src/css/modules/publish.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FontEnd/src/js/actions/modal.js" afterPath="$PROJECT_DIR$/FontEnd/src/js/actions/modal.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FontEnd/src/js/components/MobBox.js" afterPath="$PROJECT_DIR$/FontEnd/src/js/components/MobBox.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FontEnd/src/js/components/PageLi.js" afterPath="$PROJECT_DIR$/FontEnd/src/js/components/PageLi.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FontEnd/src/js/components/Slide.jsx" afterPath="$PROJECT_DIR$/FontEnd/src/js/components/Slide.jsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FontEnd/src/js/components/index.js" afterPath="$PROJECT_DIR$/FontEnd/src/js/components/index.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FontEnd/src/js/components/loginIngTop.js" afterPath="$PROJECT_DIR$/FontEnd/src/js/components/loginIngTop.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FontEnd/src/js/components/nav.js" afterPath="$PROJECT_DIR$/FontEnd/src/js/components/nav.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FontEnd/src/js/components/noLoginTop.js" afterPath="$PROJECT_DIR$/FontEnd/src/js/components/noLoginTop.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FontEnd/src/js/components/systemModal.jsx" afterPath="$PROJECT_DIR$/FontEnd/src/js/components/systemModal.jsx" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FontEnd/src/js/components/warnDialog.jsx" afterPath="$PROJECT_DIR$/FontEnd/src/js/components/warnDialog.jsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FontEnd/src/js/containers/App.jsx" afterPath="$PROJECT_DIR$/FontEnd/src/js/containers/App.jsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FontEnd/src/js/containers/Details.jsx" afterPath="$PROJECT_DIR$/FontEnd/src/js/containers/Details.jsx" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FontEnd/src/js/containers/Publish.jsx" afterPath="$PROJECT_DIR$/FontEnd/src/js/containers/Publish.jsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FontEnd/src/js/containers/Search.jsx" afterPath="$PROJECT_DIR$/FontEnd/src/js/containers/Search.jsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FontEnd/src/js/index.js" afterPath="$PROJECT_DIR$/FontEnd/src/js/index.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FontEnd/src/js/reducers/index.js" afterPath="$PROJECT_DIR$/FontEnd/src/js/reducers/index.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FontEnd/src/js/utils/util.js" afterPath="$PROJECT_DIR$/FontEnd/src/js/utils/util.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FontEnd/webpack.config.dev.js" afterPath="$PROJECT_DIR$/FontEnd/webpack.config.dev.js" />
     </list>
     <ignored path="blog.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -102,21 +43,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="App.scss" pinned="false" current-in-tab="true">
+      <file leaf-file-name="App.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/FontEnd/src/css/modules/App.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="570">
-              <caret line="116" column="4" lean-forward="false" selection-start-line="116" selection-start-column="4" selection-end-line="116" selection-end-column="4" />
+            <state relative-caret-position="-237">
+              <caret line="1" column="7" lean-forward="true" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="7" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Slide.jsx" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/FontEnd/src/js/components/Slide.jsx">
+      <file leaf-file-name="common.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/FontEnd/src/css/modules/common.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="214">
-              <caret line="23" column="48" lean-forward="false" selection-start-line="23" selection-start-column="48" selection-end-line="23" selection-end-column="48" />
+            <state relative-caret-position="435">
+              <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="45" selection-end-column="3" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="nav.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/FontEnd/src/css/modules/nav.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="746">
+              <caret line="56" column="30" lean-forward="false" selection-start-line="56" selection-start-column="30" selection-end-line="56" selection-end-column="41" />
               <folding />
             </state>
           </provider>
@@ -125,68 +76,18 @@
       <file leaf-file-name="systemModal.jsx" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/FontEnd/src/js/components/systemModal.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#38#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="585">
+              <caret line="46" column="7" lean-forward="false" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="14" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Footer.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/FontEnd/src/js/components/Footer.js">
+      <file leaf-file-name="publish.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/FontEnd/src/css/modules/publish.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#38#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/FontEnd/src/js/components/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#38#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ArticleList.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/FontEnd/src/js/components/ArticleList.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#38#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="App.jsx" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/FontEnd/src/js/containers/App.jsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="521">
-              <caret line="147" column="45" lean-forward="true" selection-start-line="147" selection-start-column="45" selection-end-line="147" selection-end-column="55" />
-              <folding>
-                <element signature="e#0#38#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="warnDialog.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/FontEnd/src/css/modules/warnDialog.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" column="21" lean-forward="false" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
+            <state relative-caret-position="362">
+              <caret line="118" column="11" lean-forward="false" selection-start-line="118" selection-start-column="11" selection-end-line="118" selection-end-column="11" />
               <folding />
             </state>
           </provider>
@@ -195,9 +96,34 @@
       <file leaf-file-name="main.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/FontEnd/src/css/main.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1365">
-              <caret line="91" column="22" lean-forward="true" selection-start-line="91" selection-start-column="22" selection-end-line="91" selection-end-column="22" />
+            <state relative-caret-position="180">
+              <caret line="12" column="25" lean-forward="false" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Publish.jsx" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/FontEnd/src/js/containers/Publish.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="439">
+              <caret line="158" column="22" lean-forward="true" selection-start-line="158" selection-start-column="22" selection-end-line="158" selection-end-column="22" />
+              <folding>
+                <element signature="e#0#38#0" expanded="true" />
+                <marker date="1491902930000" expanded="true" signature="5763:5942" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MobBox.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/FontEnd/src/js/components/MobBox.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="18" column="38" lean-forward="false" selection-start-line="18" selection-start-column="38" selection-end-line="18" selection-end-column="38" />
+              <folding>
+                <element signature="e#0#38#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -205,9 +131,21 @@
       <file leaf-file-name="_loadin.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/FontEnd/src/css/_loadin.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="572">
-              <caret line="68" column="0" lean-forward="false" selection-start-line="68" selection-start-column="0" selection-end-line="69" selection-end-column="39" />
+            <state relative-caret-position="544">
+              <caret line="76" column="30" lean-forward="true" selection-start-line="76" selection-start-column="30" selection-end-line="76" selection-end-column="30" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="warnDialog.jsx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/FontEnd/src/js/components/warnDialog.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="405">
+              <caret line="27" column="36" lean-forward="true" selection-start-line="27" selection-start-column="36" selection-end-line="27" selection-end-column="36" />
+              <folding>
+                <element signature="e#0#38#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -216,40 +154,41 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>ajaxData</find>
-      <find>requestAPI</find>
-      <find>SwitchTab</find>
-      <find>save</find>
-      <find>mob</find>
-      <find>loginSubmit</find>
-      <find>submit</find>
-      <find>submitCallback</find>
-      <find>getUserInfo</find>
-      <find>tipsBox</find>
-      <find>searchSubmit</find>
-      <find>bindActionCreators</find>
-      <find>actions</find>
-      <find>https://use.fontawesome.com/releases/v4.7.0/css/font-awesome-css.min.css</find>
-      <find>https://use.fontawesome.com/</find>
-      <find>https://use.fontawesome.com</find>
-      <find>fa-s'l</find>
-      <find>fasliders</find>
-      <find>fsliders</find>
-      <find>sliders</find>
-      <find>fa-sliders</find>
-      <find>fa-slider</find>
-      <find>fa-slide</find>
-      <find>fa-slid</find>
-      <find>fa-sli</find>
-      <find>fa-sl</find>
-      <find>fa-s</find>
-      <find>fa-</find>
-      <find>fa</find>
-      <find>include</find>
+      <find>SystemMoDAL</find>
+      <find>SystemMoDA</find>
+      <find>SystemMoD</find>
+      <find>SystemMo</find>
+      <find>SystemMod</find>
+      <find>SystemModa</find>
+      <find>SystemModal</find>
+      <find>l</find>
+      <find>log</find>
+      <find>login</find>
+      <find>logi</find>
+      <find>lo</find>
+      <find>L</find>
+      <find>Log</find>
+      <find>Login</find>
+      <find>Logi</find>
+      <find>Lo</find>
+      <find>i</find>
+      <find>imp</find>
+      <find>impoitt</find>
+      <find>impoit</find>
+      <find>impoi</find>
+      <find>impo</find>
+      <find>impor</find>
+      <find>import</find>
+      <find>import l</find>
+      <find>import lo</find>
+      <find>import log</find>
+      <find>import logi</find>
+      <find>import login</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/FontEnd/src</dir>
       <dir>$PROJECT_DIR$/FontEnd/src/css/font-awesome/less</dir>
+      <dir>$PROJECT_DIR$/FontEnd/src/js</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -258,16 +197,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/FontEnd/gulpfile.js" />
-        <option value="$PROJECT_DIR$/FontEnd/src/js/components/ArticleList.js" />
-        <option value="$PROJECT_DIR$/package.json" />
-        <option value="$PROJECT_DIR$/FontEnd/src/css/articleItem.less" />
         <option value="$PROJECT_DIR$/FontEnd/src/css/publish.less" />
         <option value="$PROJECT_DIR$/FontEnd/src/js/actions/details.js" />
         <option value="$PROJECT_DIR$/FontEnd/src/css/details.less" />
-        <option value="$PROJECT_DIR$/FontEnd/src/js/actions/modal.js" />
-        <option value="$PROJECT_DIR$/FontEnd/src/js/components/loginIngTop.js" />
-        <option value="$PROJECT_DIR$/FontEnd/src/js/components/systemModal.jsx" />
         <option value="$PROJECT_DIR$/FontEnd/src/js/containers/Search.jsx" />
         <option value="$PROJECT_DIR$/FontEnd/src/js/containers/Details.jsx" />
         <option value="$PROJECT_DIR$/FontEnd/src/js/actions/search.js" />
@@ -276,24 +208,17 @@
         <option value="$PROJECT_DIR$/FontEnd/src/js/components/Footer.js" />
         <option value="$PROJECT_DIR$/FontEnd/src/js/components/login.js" />
         <option value="$PROJECT_DIR$/FontEnd/src/js/components/MessageItem.jsx" />
-        <option value="$PROJECT_DIR$/FontEnd/src/js/components/MobBox.js" />
-        <option value="$PROJECT_DIR$/FontEnd/src/js/components/noLoginTop.js" />
         <option value="$PROJECT_DIR$/FontEnd/src/js/components/reg.js" />
         <option value="$PROJECT_DIR$/FontEnd/src/js/actions/login.js" />
         <option value="$PROJECT_DIR$/FontEnd/src/js/containers/About.jsx" />
-        <option value="$PROJECT_DIR$/FontEnd/src/js/containers/Publish.jsx" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/FontEnd/src/js/utils/util.js" />
-        <option value="$PROJECT_DIR$/FontEnd/src/js/reducers/index.js" />
         <option value="$PROJECT_DIR$/FontEnd/src/js/actions/about.js" />
         <option value="$PROJECT_DIR$/FontEnd/src/js/actions/ajax.js" />
         <option value="$PROJECT_DIR$/FontEnd/src/js/actions/publish.js" />
         <option value="$PROJECT_DIR$/FontEnd/src/js/components/index.js" />
         <option value="$PROJECT_DIR$/FontEnd/src/js/components/PageLi.js" />
         <option value="$PROJECT_DIR$/FontEnd/src/js/actions/alert.js" />
-        <option value="$PROJECT_DIR$/FontEnd/src/js/components/warnDialog.jsx" />
         <option value="$PROJECT_DIR$/FontEnd/src/js/components/tipsBox.js" />
-        <option value="$PROJECT_DIR$/FontEnd/src/js/components/nav.js" />
         <option value="$PROJECT_DIR$/FontEnd/src/css/warnDialog.less" />
         <option value="$PROJECT_DIR$/FontEnd/src/css/nav.less" />
         <option value="$PROJECT_DIR$/FontEnd/src/js/components/Slide.jsx" />
@@ -304,11 +229,25 @@
         <option value="$PROJECT_DIR$/FontEnd/index.html" />
         <option value="$PROJECT_DIR$/FontEnd/src/css/main.less" />
         <option value="$PROJECT_DIR$/FontEnd/src/css/modules/App.less" />
-        <option value="$PROJECT_DIR$/FontEnd/src/css/main.scss" />
         <option value="$PROJECT_DIR$/FontEnd/src/js/containers/App.jsx" />
         <option value="$PROJECT_DIR$/FontEnd/webpack.config.dev.js" />
-        <option value="$PROJECT_DIR$/FontEnd/src/css/_loadin.scss" />
         <option value="$PROJECT_DIR$/FontEnd/src/css/modules/App.scss" />
+        <option value="$PROJECT_DIR$/FontEnd/src/css/modules/nav.scss" />
+        <option value="$PROJECT_DIR$/FontEnd/src/js/components/nav.js" />
+        <option value="$PROJECT_DIR$/FontEnd/src/css/modules/floatModal.scss" />
+        <option value="$PROJECT_DIR$/FontEnd/src/js/utils/util.js" />
+        <option value="$PROJECT_DIR$/FontEnd/src/js/components/floatModal.jsx" />
+        <option value="$PROJECT_DIR$/FontEnd/src/js/components/systemModal.jsx" />
+        <option value="$PROJECT_DIR$/FontEnd/src/js/components/loginIngTop.js" />
+        <option value="$PROJECT_DIR$/FontEnd/src/js/components/noLoginTop.js" />
+        <option value="$PROJECT_DIR$/FontEnd/src/js/actions/modal.js" />
+        <option value="$PROJECT_DIR$/FontEnd/src/js/reducers/index.js" />
+        <option value="$PROJECT_DIR$/FontEnd/src/js/components/MobBox.js" />
+        <option value="$PROJECT_DIR$/FontEnd/src/js/components/warnDialog.jsx" />
+        <option value="$PROJECT_DIR$/FontEnd/src/css/_loadin.scss" />
+        <option value="$PROJECT_DIR$/FontEnd/src/css/modules/publish.scss" />
+        <option value="$PROJECT_DIR$/FontEnd/src/css/main.scss" />
+        <option value="$PROJECT_DIR$/FontEnd/src/js/containers/Publish.jsx" />
       </list>
     </option>
   </component>
@@ -387,6 +326,58 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FontEnd" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="utils" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FontEnd" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="reducers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -510,8 +501,8 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -717,12 +708,15 @@
       <workItem from="1490939667438" duration="12948000" />
       <workItem from="1491039904517" duration="13222000" />
       <workItem from="1491231603469" duration="387000" />
-      <workItem from="1491817514262" duration="7093000" />
+      <workItem from="1491817514262" duration="8738000" />
+      <workItem from="1491806092762" duration="10970000" />
+      <workItem from="1491903981630" duration="413000" />
+      <workItem from="1491876160538" duration="11854000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="156728000" />
+    <option name="totallyTimeSpent" value="181610000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="-1080" width="1920" height="1080" extended-state="0" />
@@ -731,6 +725,7 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2164297" sideWeight="0.4907709" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24513274" sideWeight="0.504476" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39557523" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28495574" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -743,7 +738,6 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39557523" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -753,17 +747,17 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24513274" sideWeight="0.504476" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28495574" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21769911" sideWeight="0.49552396" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24802528" sideWeight="0.4945355" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2069307" sideWeight="0.49552396" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2164297" sideWeight="0.4907709" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39557523" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2164297" sideWeight="0.5092291" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16576251" sideWeight="0.5054645" order="3" side_tool="true" content_ui="tabs" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -805,139 +799,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/FontEnd/src/js/components/nav.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="54" column="48" lean-forward="true" selection-start-line="54" selection-start-column="48" selection-end-line="54" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FontEnd/src/js/components/warnDialog.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="30" column="61" lean-forward="false" selection-start-line="30" selection-start-column="61" selection-end-line="30" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FontEnd/src/js/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FontEnd/src/css/modules/articleList.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FontEnd/src/css/modules/details.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FontEnd/src/css/modules/footer.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FontEnd/src/css/modules/loginIngTop.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FontEnd/src/css/modules/index.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FontEnd/src/css/modules/mobBox.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FontEnd/src/css/modules/nav.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="809">
-          <caret line="56" column="0" lean-forward="false" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FontEnd/src/css/modules/notLoginTop.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FontEnd/src/css/modules/tipsBox.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FontEnd/src/css/modules/SystemModal.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/webstorm.jar!/resources/html5-schema/html5/aria.rnc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
-          <caret line="266" column="18" lean-forward="false" selection-start-line="266" selection-start-column="18" selection-end-line="266" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FontEnd/src/css/font-awesome/less/icons.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-6601">
-          <caret line="127" column="62" lean-forward="true" selection-start-line="127" selection-start-column="62" selection-end-line="127" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FontEnd/src/css/font-awesome/less/screen-reader.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FontEnd/src/css/font-awesome/less/rotated-flipped.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FontEnd/src/css/font-awesome/less/path.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FontEnd/src/css/font-awesome/less/mixins.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/FontEnd/src/js/components/MessageItem.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -945,38 +806,243 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/FontEnd/src/js/components/MobBox.js">
+    <entry file="file://$PROJECT_DIR$/FontEnd/src/css/font-awesome/less/bordered-pulled.less">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FontEnd/src/css/font-awesome/less/core.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mongoDb.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FontEnd/src/css/font-awesome/less/animated.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FontEnd/src/css/font-awesome/less/stacked.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FontEnd/src/css/font-awesome/less/font-awesome.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FontEnd/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="23" lean-forward="true" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FontEnd/src/css/font-awesome/less/variables.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="64" lean-forward="false" selection-start-line="3" selection-start-column="64" selection-end-line="3" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FontEnd/src/css/modules/style.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="512">
+          <caret line="36" column="16" lean-forward="false" selection-start-line="36" selection-start-column="16" selection-end-line="36" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FontEnd/src/css/modules/pageLi.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FontEnd/src/css/modules/search.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FontEnd/src/css/modules/slide.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="12" lean-forward="false" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FontEnd/webpack.config.dev.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="411">
+          <caret line="30" column="11" lean-forward="true" selection-start-line="30" selection-start-column="11" selection-end-line="30" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FontEnd/src/css/modules/articleItem.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FontEnd/src/css/font-awesome/scss/_variables.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="258">
+          <caret line="370" column="1" lean-forward="false" selection-start-line="370" selection-start-column="1" selection-end-line="370" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/sass/lib/sass.jar!/org/jetbrains/plugins/sass/stdlib/sass_functions.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="258">
+          <caret line="1082" column="10" lean-forward="false" selection-start-line="1082" selection-start-column="10" selection-end-line="1082" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FontEnd/src/css/modules/warnDialog.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="21" lean-forward="false" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FontEnd/src/js/components/Slide.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="23" column="48" lean-forward="false" selection-start-line="23" selection-start-column="48" selection-end-line="23" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FontEnd/src/js/components/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FontEnd/src/js/components/ArticleList.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FontEnd/src/css/modules/floatModal.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="29" lean-forward="false" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FontEnd/src/js/containers/Details.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#38#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FontEnd/src/js/components/Footer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FontEnd/src/css/modules/footer.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FontEnd/src/js/utils/util.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="126" column="34" lean-forward="false" selection-start-line="126" selection-start-column="34" selection-end-line="126" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FontEnd/src/js/containers/Page404.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#37#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FontEnd/src/js/containers/Search.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#40#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/FontEnd/src/js/components/PageLi.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
+        <state relative-caret-position="-1444">
           <caret line="12" column="33" lean-forward="false" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="33" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/FontEnd/src/css/modules/common.scss">
+    <entry file="file://$PROJECT_DIR$/FontEnd/src/js/components/floatModal.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="165">
+          <caret line="13" column="19" lean-forward="false" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/FontEnd/src/css/font-awesome/less/bordered-pulled.less">
+    <entry file="file://$PROJECT_DIR$/FontEnd/src/js/containers/App.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="746">
+          <caret line="147" column="45" lean-forward="false" selection-start-line="147" selection-start-column="45" selection-end-line="147" selection-end-column="55" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/FontEnd/src/css/font-awesome/less/core.less">
+    <entry file="file://$PROJECT_DIR$/FontEnd/src/js/actions/modal.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="37" column="37" lean-forward="false" selection-start-line="37" selection-start-column="37" selection-end-line="37" selection-end-column="37" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FontEnd/src/js/reducers/modal.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -986,221 +1052,160 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/FontEnd/src/js/reducers/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="33" column="3" lean-forward="false" selection-start-line="33" selection-start-column="3" selection-end-line="33" selection-end-column="3" />
+        <state relative-caret-position="435">
+          <caret line="35" column="16" lean-forward="true" selection-start-line="35" selection-start-column="16" selection-end-line="35" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FontEnd/src/js/components/tipsBox.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="n#!!doc" expanded="false" />
+            <element signature="e#0#38#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mongoDb.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FontEnd/src/css/font-awesome/less/animated.less">
+    <entry file="file://$PROJECT_DIR$/FontEnd/src/js/containers/About.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#38#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FontEnd/src/js/components/reg.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="27" lean-forward="false" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/FontEnd/src/css/font-awesome/less/stacked.less">
+    <entry file="file://$PROJECT_DIR$/FontEnd/src/js/components/login.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="436">
+          <caret line="34" column="36" lean-forward="true" selection-start-line="34" selection-start-column="36" selection-end-line="34" selection-end-column="36" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FontEnd/src/js/components/loginIngTop.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="32" column="0" lean-forward="true" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/FontEnd/src/css/font-awesome/less/font-awesome.less">
+    <entry file="file://$PROJECT_DIR$/FontEnd/src/js/components/noLoginTop.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="420">
+          <caret line="28" column="15" lean-forward="false" selection-start-line="28" selection-start-column="15" selection-end-line="28" selection-end-column="15" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FontEnd/src/js/components/nav.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/FontEnd/index.html">
+    <entry file="file://$PROJECT_DIR$/FontEnd/src/js/components/MobBox.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="23" lean-forward="true" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
-          <folding />
+        <state relative-caret-position="270">
+          <caret line="18" column="38" lean-forward="false" selection-start-line="18" selection-start-column="38" selection-end-line="18" selection-end-column="38" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/FontEnd/src/css/font-awesome/less/variables.less">
+    <entry file="file://$PROJECT_DIR$/FontEnd/src/js/components/warnDialog.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="64" lean-forward="false" selection-start-line="3" selection-start-column="64" selection-end-line="3" selection-end-column="64" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FontEnd/src/css/modules/style.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="512">
-          <caret line="36" column="16" lean-forward="false" selection-start-line="36" selection-start-column="16" selection-end-line="36" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FontEnd/src/css/modules/pageLi.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FontEnd/src/css/modules/publish.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FontEnd/src/css/modules/search.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FontEnd/src/css/modules/slide.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="12" lean-forward="false" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FontEnd/webpack.config.dev.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="411">
-          <caret line="30" column="11" lean-forward="true" selection-start-line="30" selection-start-column="11" selection-end-line="30" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FontEnd/src/css/modules/articleItem.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FontEnd/src/css/font-awesome/scss/_variables.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="370" column="1" lean-forward="false" selection-start-line="370" selection-start-column="1" selection-end-line="370" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/sass/lib/sass.jar!/org/jetbrains/plugins/sass/stdlib/sass_functions.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="1082" column="10" lean-forward="false" selection-start-line="1082" selection-start-column="10" selection-end-line="1082" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FontEnd/src/css/modules/warnDialog.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="21" lean-forward="false" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FontEnd/src/css/main.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1365">
-          <caret line="91" column="22" lean-forward="true" selection-start-line="91" selection-start-column="22" selection-end-line="91" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FontEnd/src/js/components/Slide.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="23" column="48" lean-forward="false" selection-start-line="23" selection-start-column="48" selection-end-line="23" selection-end-column="48" />
-          <folding />
+        <state relative-caret-position="405">
+          <caret line="27" column="36" lean-forward="true" selection-start-line="27" selection-start-column="36" selection-end-line="27" selection-end-column="36" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/FontEnd/src/js/components/systemModal.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FontEnd/src/js/components/Footer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FontEnd/src/js/components/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FontEnd/src/js/components/ArticleList.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FontEnd/src/js/containers/App.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="521">
-          <caret line="147" column="45" lean-forward="true" selection-start-line="147" selection-start-column="45" selection-end-line="147" selection-end-column="55" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FontEnd/src/css/_loadin.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="572">
-          <caret line="68" column="0" lean-forward="false" selection-start-line="68" selection-start-column="0" selection-end-line="69" selection-end-column="39" />
+        <state relative-caret-position="585">
+          <caret line="46" column="7" lean-forward="false" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="14" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/FontEnd/src/css/modules/App.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="116" column="4" lean-forward="false" selection-start-line="116" selection-start-column="4" selection-end-line="116" selection-end-column="4" />
+        <state relative-caret-position="-237">
+          <caret line="1" column="7" lean-forward="true" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="7" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FontEnd/src/css/modules/nav.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="746">
+          <caret line="56" column="30" lean-forward="false" selection-start-line="56" selection-start-column="30" selection-end-line="56" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FontEnd/src/css/modules/common.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="45" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FontEnd/src/css/_loadin.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="76" column="30" lean-forward="true" selection-start-line="76" selection-start-column="30" selection-end-line="76" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FontEnd/src/css/modules/publish.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="362">
+          <caret line="118" column="11" lean-forward="false" selection-start-line="118" selection-start-column="11" selection-end-line="118" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FontEnd/src/css/main.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="25" lean-forward="false" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FontEnd/src/js/containers/Publish.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="439">
+          <caret line="158" column="22" lean-forward="true" selection-start-line="158" selection-start-column="22" selection-end-line="158" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+            <marker date="1491902930000" expanded="true" signature="5763:5942" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>

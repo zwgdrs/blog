@@ -9,10 +9,11 @@ import CSSModules from 'react-css-modules'
 })
 class NoLoginTop extends Component {
     render() {
+        const modalActions = this.props.modalActions
         return (
             <div styleName="not-login">
-                <div className="white-btn" onClick={() => this.props.modalActions.mobBoxData("loginShow") }>登录</div>
-                <div className="white-btn" onClick={() => this.props.modalActions.mobBoxData("regShow") }>注册</div>
+                <div className="white-btn" onClick={() => modalActions.mobBoxData("loginShow") }>登录</div>
+                <div className="white-btn" onClick={() => modalActions.mobBoxData("regShow") }>注册</div>
             </div>
         )
     }

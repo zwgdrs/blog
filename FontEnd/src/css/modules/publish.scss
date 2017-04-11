@@ -1,9 +1,52 @@
+@import "../loadin";
+
 .publish {
+  position: relative;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
+  //justify-content: space-between;
 
+  .dialog {
+    position: absolute;
+    top: 150px;
+    left: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 60%;
+    height:50px;
+    margin-left: -25%;
+    padding-left: 10px;
+    border-radius: 3px;
+    color: white;
+    background-color: #2c2e31;
+
+    >input {
+      width: 70%;
+      height: 40px;
+      padding: 5px;
+      border: 0;
+      color: black;
+      font-size: 16px;
+    }
+
+    .white-btn {
+      padding: 9px 10px;
+      color: black;
+      border-radius: 2px;
+      cursor: pointer;
+      background: white;
+      transition: all .2s linear 0s;
+      border: 1px solid #24292e;
+
+      &:hover {
+        border: 1px solid white;
+        color: white;
+        border-radius: 2px;
+        background-color: #24292e;
+      }
+    }
+  }
   .title {
     display: flex;
     align-items: center;
@@ -21,70 +64,142 @@
     }
   }
 
-  .content {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  .inner {
     width: 100%;
-    height: 650px;
-    > div {
-      width: 50%;
-      height: 100%;
-      padding: 10px;
-    }
-
-    .edit {
-      border: 1px solid #eee;
-      border-radius: 3px;
-    }
-    .preview {
-      border-bottom: 1px solid #eee;
-      border-top: 1px solid #eee;
-      border-right: 1px solid #eee;
-      border-radius: 3px;
-      overflow: scroll;
-      overflow-scrolling: touch;
-      -webkit-overflow-scrolling: touch;
-    }
-    textarea {
-      width: 100%;
-      height: 100%;
-      border: 0;
-    }
-  }
-
-  .bottom-container {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    height: 50px;
-    padding: 5px;
-    border: 1px solid #eee;
 
-    .upload, .category {
+    .func {
+      width: 60%;
+      height: 50px;
+      align-self: flex-start;
+
+      .list {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+      }
+      .list > .li {
+        position: relative;
+        cursor: pointer;
+      }
+      .list {
+        .li:nth-child(1) {
+
+          &:before {
+            @include tip-icon(exchange-icon)
+          }
+        }
+        .li:nth-child(2) {
+          &:before {
+            @include tip-icon(bold-icon)
+          }
+        }
+        .li:nth-child(3) {
+          &:before {
+            @include tip-icon(italic-icon)
+          }
+        }
+        .li:nth-child(4) {
+          &:before {
+            @include tip-icon(picture-icon)
+          }
+        }
+        .li:nth-child(5) {
+          &:before {
+            @include tip-icon(link-icon)
+          }
+        }
+        .li:nth-child(6) {
+          &:before {
+            @include tip-icon(quote-left-icon)
+          }
+        }
+        .li:nth-child(7) {
+          &:before {
+            @include tip-icon(undo-icon)
+          }
+        }
+        .li:nth-child(8) {
+          &:before {
+            @include tip-icon(redo-icon)
+          }
+        }
+      }
+    }
+
+    .content {
       display: flex;
       align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      height: 650px;
+      > div {
+        width: 100%;
+        height: 100%;
+        padding: 10px;
+      }
+
+      .edit {
+        border: 1px solid #eee;
+        border-radius: 3px;
+      }
+      .preview {
+        border: 1px solid #eee;
+        border-radius: 3px;
+        overflow: scroll;
+        overflow-scrolling: touch;
+        -webkit-overflow-scrolling: touch;
+        background: #fbfbfb;
+
+        &::-webkit-scrollbar {
+          display:none
+        }
+      }
+      textarea {
+        width: 100%;
+        height: 100%;
+        border: 0;
+      }
     }
 
-    .btn {
-      width: 80px;
-      height: 30px;
-      color: white;
-      text-align: center;
-      line-height: 30px;
-      border-radius: 3px;
-      border: 1px solid #24292e;
-      background-color: #24292e;
-      cursor: pointer;
-      transition: all .2s linear 0s;
+    .bottom-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      height: 50px;
+      padding: 5px;
+      border: 1px solid #eee;
 
-      &:hover {
-        color: black;
-        border-radius: 2px;
-        background-color: white;
+      .upload, .category {
+        display: flex;
+        align-items: center;
+      }
+
+      .btn {
+        width: 80px;
+        height: 30px;
+        color: white;
+        text-align: center;
+        line-height: 30px;
+        border-radius: 3px;
         border: 1px solid #24292e;
+        background-color: #24292e;
+        cursor: pointer;
+        transition: all .2s linear 0s;
+
+        &:hover {
+          color: black;
+          border-radius: 2px;
+          background-color: white;
+          border: 1px solid #24292e;
+        }
       }
     }
   }
+
 }

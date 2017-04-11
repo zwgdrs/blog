@@ -15,7 +15,7 @@ import CSSModules from 'react-css-modules'
 class Nav extends Component {
     constructor(props) {
         super(props)
-        // this.keyword
+        this.handleSubmit = this.handleSubmit.bind(this)
     }
 
     componentWillMount() {
@@ -49,9 +49,7 @@ class Nav extends Component {
                 <div styleName="content">
                     <a href="/" styleName="logo"> 剑月轩博客 </a>
                     <div styleName="search-form">
-                        <input type="text" ref={el => {
-                            this.keyword = el
-                        }} name="keyword" placeholder="可以搜标题或者内容"/>
+                        <input type="text" ref={el => this.keyword = el} name="keyword" placeholder="可以搜标题或者内容"/>
                         <div styleName="btn" onClick={this.handleSubmit}><i className="fa fa-search" aria-hidden="true" /></div>
                     </div>
                     {isLogin}

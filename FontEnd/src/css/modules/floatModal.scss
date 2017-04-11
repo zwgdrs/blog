@@ -1,0 +1,23 @@
+@import "../loadin";
+
+.container {
+  display: none;
+  position: absolute;
+  bottom: 0px;
+  left: -55px;
+  z-index: 100000;
+  max-width: 500px;
+  padding: 10px;
+  color: black;
+  word-wrap: break-word;
+  background: rgba(255, 255, 255, 1);
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+//.float-modal {
+//  position: absolute;
+//  width: 500px;
+//  color: white;
+//  background-color: black;
+//}

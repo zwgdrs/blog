@@ -28,6 +28,17 @@ const mobBoxData = (type, data) => {
                 type: "regSubmit",
                 data
             }
+            case "INPUT_IMG_SRC":
+            return {
+                type: "INPUT_IMG_SRC",
+                data
+            }
+            case "INPUT_LINK_URL":
+            return {
+                type: "INPUT_LINK_URL",
+                data
+            }
+
     }
 }
 

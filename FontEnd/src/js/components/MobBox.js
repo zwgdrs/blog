@@ -17,7 +17,6 @@ export class MobBox extends Component {
     type = type ? (type == "loginShow" ? <Login /> : <Reg />) : type
     return (
       type && <div styleName="mobBox">
-
         {type}
       </div>
     )

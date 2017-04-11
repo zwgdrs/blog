@@ -67,7 +67,18 @@ $tip-icon:(
         list-icon: $fa-var-list-alt,
         flag-icon: $fa-var-flag,
         sliders-icon: $fa-var-sliders,
-        arrow-up-icon: $fa-var-arrow-up
+        arrow-up-icon: $fa-var-arrow-up,
+        search-icon: $fa-var-search,
+        exchange-icon: $fa-var-exchange,
+        bold-icon: $fa-var-bold,
+        italic-icon: $fa-var-italic,
+        picture-icon: $fa-var-picture-o,
+        link-icon: $fa-var-link,
+        ul-icon: $fa-var-list,
+        undo-icon: $fa-var-undo,
+        redo-icon: $fa-var-repeat,
+        quote-left-icon: $fa-var-quote-left,
+        quote-right-icon: $fa-var-quote-right,
 );
 
 @mixin tip-icon($name){
